@@ -1,0 +1,21 @@
+.avatarUploader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  * { outline: none; }
+
+  .thumbnail {
+    width: 230px;
+    height: 230px;
+    margin-bottom: 16px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &Loading {
+      opacity: .7;
+    }
+  } 
+}

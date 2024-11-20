@@ -1,0 +1,36 @@
+@import 'colors.scss';
+
+.g-form__row {
+  display: flex;
+  margin-bottom: 18px;
+}
+
+.g-form__label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: block;
+  width: fit-content;
+}
+
+.g-form__label.m-required::after {
+  content: "*";
+  color: $red;
+}
+
+.g-form__input {
+  border: 1px solid $grey;
+  border-radius: 8px;
+  outline: 0;
+  padding: 6px 16px;
+  font-size: 16px;
+  font-weight: 400;
+  width: 100%;
+}
+
+.g-form__validation-error {
+  color: $red;
+  font-size: 12px;
+  font-weight: 500;
+  padding-left: 8px;
+}

@@ -1,0 +1,37 @@
+.g-page-table-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.g-page-table-head-button-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border-radius: 8px;
+    padding: 2px 8px;
+    background: #f6f6f6;
+}
+.g-page-table__button {
+    border-radius: 8px;
+    padding: 8px;
+    background-color: $lightgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    position: relative;
+    cursor: pointer;
+}
+.g-page-table__button::after {
+    content: "";
+    height: 30px;
+    width: 0px;
+    border-right: 1px solid #d1d1d1;
+    position: absolute;
+    top: 50%;
+    right: -7px;
+    transform: translateY(-50%);
+}
+.g-page-table__button:last-child::after {
+    display: none;
+}

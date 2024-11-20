@@ -1,0 +1,54 @@
+@import '@assets/styles/colors.scss';
+
+.documents {
+  &__controls {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__table-settings {
+    display: flex;
+    padding: 10px;
+    background-color: $lightgrey;
+    border-radius: 8px;
+  }
+
+  &__controls {
+    margin-bottom: 20px;
+  }
+
+  &__search {
+    width: 710px;
+  }
+
+  &__table-filters {
+    width: 20px;
+    height: 20px;
+    background: url("@assets/icons/filter.svg") no-repeat;
+    border-right: 1px solid #ccc;
+    padding-right: 30px;
+    cursor: pointer;
+  }
+
+  &__table-filters:hover {
+    background: url("@assets/icons/filter-blue.svg") no-repeat;
+  }
+
+  &__table-properties {
+    width: 20px;
+    height: 20px;
+    background: url("@assets/icons/cog.svg") no-repeat;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  &__table-properties:hover {
+    background: url("@assets/icons/cog-blue.svg") no-repeat;
+  }
+
+  &__pagination {
+    padding-top: 20px;
+  }
+
+
+}

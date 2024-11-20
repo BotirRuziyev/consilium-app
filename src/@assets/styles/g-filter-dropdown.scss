@@ -1,0 +1,22 @@
+@import 'colors.scss';
+
+.g-filter-dropdown {
+
+}
+.g-filter-dropdown__header {
+  font-size: 14px;
+  font-weight: 500;
+  color: $black;
+}
+.g-filter-dropdown__items {}
+
+.g-filter-dropdown__item {
+  border: none;
+  margin-bottom: 8px;
+}
+
+.g-filter-dropdown__footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 6px 24px;
+}

@@ -1,0 +1,15 @@
+.g-icon-star {
+  width: 20px;
+  height: 20px;
+  background: url("@assets/icons/star.svg");
+}
+
+.g-icon-star.m-active {
+  background: url("@assets/icons/star-active.svg");
+}
+
+.g-icon-warning {
+  background: url("@assets/icons/warning.svg");
+  width: 21px;
+  height: 21px;
+}

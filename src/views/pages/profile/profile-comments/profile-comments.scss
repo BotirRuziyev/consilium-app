@@ -1,0 +1,48 @@
+@import '@assets/styles/colors.scss';
+
+.profile-comments {
+  &__list {
+    width: 860px;
+  }
+
+  &__item {
+    border-bottom: 1px solid rgba(75, 76, 82, 0.2);
+    margin-bottom: 20px;
+  }
+
+  &__item:last-child {
+    border-bottom: none;
+  }
+
+  &__header {
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    width: fit-content;
+    margin-bottom: 12px;
+  }
+
+  &__header.m-important::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -10px;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: $red;
+  }
+
+  &__date {
+    color: #4B4C52;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  &__comment {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 12px 0;
+  }
+}

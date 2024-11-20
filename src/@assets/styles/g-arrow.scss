@@ -1,0 +1,22 @@
+.g-arrow {
+  background: url('@assets/icons/arrow-down.svg');
+  width: 16px;
+  height: 9px;
+}
+
+.g-arrow.m-blue {
+  background: url('@assets/icons/arrow-down-blue.svg');
+}
+
+
+.g-arrow.m-up {
+  transform: rotate(180deg);
+}
+
+.g-arrow.m-left {
+  transform: rotate(90deg);
+}
+
+.g-arrow.m-right {
+  transform: rotate(270deg);
+}

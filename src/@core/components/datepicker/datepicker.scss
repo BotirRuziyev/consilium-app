@@ -1,0 +1,36 @@
+@import '@assets/styles/colors.scss';
+
+.react-datepicker-custom {
+  margin-top: 8px;
+  background-color: $white;
+  box-shadow: 1px 1px 4px rgb(202, 202, 202);
+  border-radius: 2px;
+  padding-bottom: 10px;
+}
+
+.react-datepicker-custom .rdrSelected {
+  background-color: $blue;
+  color: $white;
+}
+
+.react-datepicker-custom .rdrDayStartPreview,
+.react-datepicker-custom .rdrDayEndPreview {
+  border-color: $blue;
+}
+
+.react-datepicker-custom .rdrDayNumber span::after {
+  background-color: $blue;
+}
+
+.react-datepicker-custom .rdrButton:hover {
+  background-color: $blue;
+}
+
+.react-datepicker-custom .react-datepicker__footer {
+  text-align: end;
+  padding: 10px 12px;
+}
+
+.react-datepicker-custom .react-datepicker__footer .g-button.m-cancel {
+  margin-right: 30px;
+}

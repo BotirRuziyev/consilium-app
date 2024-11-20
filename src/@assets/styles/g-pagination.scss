@@ -1,0 +1,34 @@
+@import 'colors.scss';
+
+.g-pagination {
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+  
+  &__item {
+    margin-right: 8px;
+    cursor: pointer;
+  }
+  
+  &__number {
+    border-radius: 100%;
+    width: 28px;
+    text-align: center;
+    padding: 4px 0;
+  }
+
+  &__number:hover {
+    background: rgba(128, 128, 128, .3);
+  }
+
+  &__current {
+    background: $blue;
+    color: $white;
+  }
+
+  &__current:hover {
+    background: $blue;
+    color: $white;
+  }
+}

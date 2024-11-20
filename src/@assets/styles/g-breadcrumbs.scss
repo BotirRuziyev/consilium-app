@@ -1,0 +1,29 @@
+.g-breadcrumbs {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.g-breadcrumbs__item {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+
+  a {
+    font-size: inherit;
+    color: inherit;
+  }
+}
+
+.g-breadcrumbs__item::after {
+  content: "";
+  display: block;
+  width: 7px;
+  height: 12px;
+  background-image: url('@assets/icons/breadcrumbs-arrow.svg');
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.g-breadcrumbs__item:last-child::after {
+  display: none;
+}

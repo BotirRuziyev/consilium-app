@@ -1,0 +1,17 @@
+.g-search {
+  position: relative;
+}
+
+.g-search::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 15px;
+  width: 20px;
+  height: 20px;
+  background: url("@assets/icons/search.svg");
+}
+
+.g-search input {
+  padding-left: 40px;
+}

@@ -1,0 +1,32 @@
+@import 'colors.scss';
+
+.g-modal {
+  padding: 60px 50px;
+  border-radius: 50px;
+  border: none;
+  position: relative;
+  width: 900px;
+  outline: none;
+}
+
+.g-modal__header {
+  text-align: center;
+  color: $blue;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.g-modal__text {
+  margin-bottom: 10px;
+}
+
+.g-modal__close {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background: url("@assets/icons/close.svg");
+  top: 56px;
+  right: 56px;
+  cursor: pointer;
+}

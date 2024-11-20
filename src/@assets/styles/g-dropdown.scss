@@ -1,0 +1,47 @@
+@import 'colors.scss';
+
+.g-dropdown {
+  width: fit-content;
+  box-shadow: 0 0 4px 0 rgba(26, 29, 45, 0.2);
+  border-radius: 12px;
+  font-size: 16px;
+  background-color: $white;
+}
+
+.g-dropdown__header{
+  font-weight: 500;
+  font-size: 14px;
+  padding: 15px 25px 0 25px;
+  margin-bottom: 20px;
+}
+
+.g-dropdown__content {
+  padding: 0 25px 25px 25px;
+}
+
+.g-dropdown-button {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 9px 20px 9px 20px;
+  border: 1px solid $grey;
+  border-radius: 30px;
+  background-color: $white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+
+  span {
+    margin-right: 12px;
+  }
+}
+
+.g-dropdown-button.m-active {
+  background-color: $lightblue;
+  border: 1px solid $darkgrey;
+}
+
+.g-dropdown-button.m-filled {
+  background-color: $mediumblue;
+  border: 1px solid $darkgrey;
+}

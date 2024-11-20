@@ -1,0 +1,103 @@
+@import 'colors.scss';
+
+.g-table-filter-dropdown {}
+
+.g-table-filter-dropdown__header {
+  color: #4B4C52;
+}
+.g-table-filter-dropdown__items {}
+
+.g-table-filter-dropdown__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid $grey;
+  padding: 4px 0;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+
+  .active {
+    color: $blue;
+  }
+}
+
+.g-table-filter-dropdown__icon {
+  margin-right: 15px;
+  background-repeat: no-repeat;
+}
+
+.g-table-filter-dropdown__icon.m-sort-desc {
+  background: url("@assets/icons/sort-desc.svg");
+  width: 20px;
+  height: 18px;
+}
+
+.g-table-filter-dropdown__icon.m-sort-asc {
+  background: url("@assets/icons/sort-asc.svg");
+  width: 20px;
+  height: 18px;
+}
+
+.g-table-filter-dropdown__icon.m-drag {
+  background: url("@assets/icons/drag.svg");
+  width: 8px;
+  height: 12px;
+}
+
+.g-table-filter-dropdown__icon.m-eye {
+  background: url("@assets/icons/eye.svg");
+  width: 22px;
+  height: 16px;
+}
+
+.g-table-filter-dropdown__icon.m-eye.m-off{
+  background: url("@assets/icons/eye-off.svg");
+}
+
+.g-table-filter-dropdown__icon.m-pin {
+  background: url("@assets/icons/pin.svg");
+  width: 12px;
+  height: 18px;
+}
+
+.g-table-filter-dropdown__icon.m-pin.m-disabled {
+  background: url("@assets/icons/pin-grey.svg");
+}
+
+.g-table-filter-dropdown__icons {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 0;
+}
+
+.g-table-filter-dropdown__icons .g-table-filter-dropdown__icon {
+  margin-right: 10px;
+}
+
+.g-table-filter-dropdown__icons .g-table-filter-dropdown__icon:last-child {
+  margin-right: 5px;
+}
+
+.g-table-filter-dropdown__text.m-fixed-width {
+  width: 240px;
+}
+
+.g-table-filter-dropdown__footer {
+  box-shadow: 0 0 4px 0 rgba(26, 29, 45, 0.1);
+  padding: 15px;
+}
+
+.g-table-filter-dropdown__footer-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.g-table-filter-dropdown__footer-buttons .g-button {
+  margin-right: 40px;
+}
+
+.g-table-filter-dropdown__footer-buttons .g-button:last-child {
+  margin-right: 0;
+}

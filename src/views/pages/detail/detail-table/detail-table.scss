@@ -1,0 +1,188 @@
+
+
+.detail__table-wrapper {
+  overflow: auto;
+  width: 1730px;
+  height: 550px;
+  border-radius: 20px;
+}
+
+.detail-table {
+  border-spacing: 0;
+  table-layout: fixed;
+}
+
+.detail-table thead th {
+  position: sticky;
+  top: 0;
+  background: white;
+}
+
+.detail-table th {
+  text-align: left;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.detail-table th.m-center {
+  text-align: center;
+}
+
+.detail-table th,
+.detail-table td {
+  padding: 10px 12px;
+  border-top: 1px solid #D0D1D5;
+}
+
+.detail-table thead tr:first-child th {
+  border-bottom: 1px solid #D0D1D5;
+}
+
+.detail-table thead tr:nth-child(2) th {
+  border-top: none;
+  border-bottom: 1px solid #D0D1D5;
+}
+
+.detail-table tbody tr:first-child td {
+  border-top: none;
+}
+.detail-table tr:nth-child(4n) td,
+.detail-table tr:nth-child(4n-1) td {
+  background-color: #fff;
+}
+
+.detail-table td {
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #F2F4F7;
+}
+
+.detail-table tr:nth-last-child(2) td:first-child {
+  border-radius: 0 0 0 20px;
+}
+
+.detail-table tr:first-child th:first-child {
+  border-radius: 20px 0 0 0;
+}
+
+.detail-table tr:first-child th:last-child {
+  border-radius: 0 20px 0 0;
+}
+
+.detail-table tr:last-child td:last-child {
+  border-radius: 0 0 20px 0;
+}
+
+.detail-table tr:last-child td {
+  border-bottom: 1px solid #D0D1D5;
+}
+
+.detail-table th.m-right-border,
+.detail-table td.m-right-border {
+  border-right: 1px solid #D0D1D5;
+}
+
+.detail-table td.m-left-border,
+.detail-table th.m-left-border {
+  border-left: 1px solid #D0D1D5;
+}
+
+.detail-table thead tr:last-child th {
+  top: 41px;
+}
+
+.detail-table__staff {
+  text-align: center;
+}
+
+.detail-table__checkbox,
+.detail-table__brigade,
+.detail-table__profile,
+.detail-table__plate {
+  z-index: 5;
+}
+
+.detail-table__checkbox {
+  left: 0;
+}
+
+.detail-table__brigade {
+  min-width: 110px;
+  left: 45px;
+}
+
+.detail-table__profile {
+  min-width: 110px;
+  left: 155px;
+}
+
+.detail-table__plate {
+  min-width: 135px;
+  left: 265px;
+}
+
+.detail-table__time {
+  min-width: 130px;
+}
+
+.detail-table__name {
+  min-width: 160px;
+}
+
+.detail-table__number {
+  max-width: 80px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.detail-table__checkbox-cell,
+.detail-table__brigade-cell,
+.detail-table__profile-cell,
+.detail-table__plate-cell {
+  position: sticky;
+  z-index: 2;
+}
+
+
+.detail-table td.m-last {
+  border-bottom: 1px solid #D0D1D5;
+}
+
+.detail-table__checkbox-cell {
+  left: 0;
+}
+.detail-table__brigade-cell {
+  left: 45px;
+}
+.detail-table__profile-cell {
+  left: 155px;
+}
+.detail-table__plate-cell {
+  left: 265px;
+}
+
+
+.detail__table.m-drivers {
+
+}
+
+.detail-table.m-drivers thead tr:last-child th {
+  top: 0;
+}
+
+.detail-table.m-drivers .detail-table__time {
+  min-width: 180px;
+}
+
+
+.detail-table.m-drivers .detail-table__name {
+  min-width: 260px;
+}
+
+.detail-table.m-drivers .detail-table__number {
+  max-width: 145px;
+}
+
+.detail-table.m-drivers .detail-table__comment {
+  width: 565px;
+}

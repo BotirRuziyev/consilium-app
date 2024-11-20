@@ -1,0 +1,16 @@
+{
+  "extends": ["react-app", "prettier"],
+  "rules": {
+    "import/first": "off",
+    "import/no-anonymous-default-export": ["error", {
+      "allowArray": true,
+      "allowArrowFunction": true,
+      "allowAnonymousClass": true,
+      "allowAnonymousFunction": true,
+      "allowCallExpression": true,
+      "allowNew": true,
+      "allowLiteral": true,
+      "allowObject": true
+    }]
+  }
+}

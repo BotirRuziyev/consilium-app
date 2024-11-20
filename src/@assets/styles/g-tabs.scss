@@ -1,0 +1,30 @@
+@import 'colors.scss';
+
+.g-tabs {
+
+}
+
+.g-tabs__list {
+  display: flex;
+  border-bottom: 1px solid $lightgrey;
+  margin-bottom: 20px;
+}
+
+.g-tabs__item {
+  position: relative;
+  top: 1px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  padding: 8px 18px;
+  font-size: 14px;
+  font-weight: 400;
+  outline: 0;
+}
+
+.g-tabs__item:hover {
+  border-bottom: 2px solid $blue;
+}
+
+.g-tabs__content-item {
+  font-size: 14px;
+}

@@ -1,0 +1,28 @@
+@import 'colors.scss';
+
+.g-nav-tabs {
+  display: flex;
+  align-items: center;
+  border-left: 1px solid $black;
+  padding-left: 12px;
+}
+
+.g-nav-tabs__item {
+  margin-right: 10px;
+}
+
+.g-nav-tabs__button {
+  border-radius: 8px;
+  padding: 8px 18px;
+  font-weight: 400;
+  background-color: $lightgrey;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.g-nav-tabs__button.m-active {
+  border: 1px solid $blue;
+  background-color: $white;
+  padding: 6px 18px;
+  font-weight: 600;
+}

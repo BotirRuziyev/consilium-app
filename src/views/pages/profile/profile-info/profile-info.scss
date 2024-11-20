@@ -1,0 +1,89 @@
+@import '@assets/styles/colors.scss';
+
+.profile-info {
+  display: flex;
+
+  &__table {
+    margin-left: 65px;
+  }
+
+  &__avatar {
+    text-align: center;
+  }
+
+  &__avatar-image {
+    border-radius: 50%;
+    width: 230px;
+    height: 230px;
+    margin-bottom: 8px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &__avatar-edit {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &__avatar span {
+    font-size: 14px;
+    font-weight: 600;
+    color: #005AE1;
+  }
+
+  &__avatar-edit-icon {
+    width: 20px;
+    height: 20px;
+    background: url('@assets/icons/pencil.svg');
+    margin-right: 5px;
+  }
+
+  &__row {
+    display: flex;
+    margin-bottom: 40px;
+  }
+
+  &__row.m-submit {
+    justify-content: right;
+  }
+
+  &__row.m-nogap {
+    margin-bottom: 16px;
+  }
+
+  &__row-name {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  &__cell {
+    width: 270px;
+  }
+
+  &__cell-header {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  &__cell-text {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  &__textarea {
+    width: 564px;
+    height: 82px;
+    resize: none;
+    border: 1px solid $grey;
+    border-radius: 8px;
+    padding: 6px 16px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}

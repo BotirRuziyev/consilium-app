@@ -1,0 +1,151 @@
+@import '@assets/styles/colors.scss';
+
+.sidebar-menu {
+  width: 278px;
+  overflow: hidden;
+  transition: width 0.2s;
+  box-shadow: 0px 0px 3px 0px rgba(32, 32, 34, 0.5);
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: #fff;
+  z-index: 100;
+
+  &.m-closed {
+    width: 102px;
+    box-shadow: 0px 0px 3px 0px rgba(32, 32, 34, 0.1);
+  }
+
+  &.m-closed .sidebar-menu__item.m-opened .sidebar-menu__sublist {
+    display: none;
+  }
+
+  &.m-closed .sidebar-menu__item-name {
+    margin-left: 36px;
+  }
+
+  & .sidebar-menu__item-name {
+    margin-left: 14px;
+  }
+
+  &__item .sidebar-menu__sublist {
+    display: none;
+  }
+
+  &__item.m-opened .sidebar-menu__sublist {
+    display: block;
+  }
+
+  &__item.m-opened .sidebar-menu__sublist {
+    display: block;
+  }
+
+  &__sublist {
+    padding-left: 60px;
+  }
+
+  &__sublist-item {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+
+  &__icon {
+    width: 30px;
+    height: 22px;
+    margin-top: 30px;
+    margin-left: 30px;
+    background: url('@assets/icons/menu-icon-opened.svg');
+  }
+  
+  &__icon.m-closed {
+    background: url('@assets/icons/menu-icon-closed.svg');
+  }
+  
+  &__list {
+    margin-left: 30px;
+    margin-top: 60px;
+    width: 248px;
+  }
+  
+  &__item-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  &__item {
+    margin-bottom: 30px;
+  }
+  
+  &__item-icon {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+  }
+  
+  &__item-icon.m-main {
+    background-image: url('@assets/icons/menu-icons/main.svg');
+  }
+  
+  &__item-icon.m-main.m-blue {
+    background-image: url('@assets/icons/menu-icons/main-blue.svg');
+  }
+  
+  &__item-icon.m-planning {
+    background-image: url('@assets/icons/menu-icons/calendar.svg');
+  }
+  &__item-icon.m-staff {
+    background-image: url('@assets/icons/menu-icons/people.svg');
+  }
+  
+  &__item-icon.m-docs {
+    background-image: url('@assets/icons/menu-icons/documents.svg');
+    width: 36px;
+    height: 40px;
+  }
+  
+  &__item-icon.m-docs.m-blue {
+    background-image: url('@assets/icons/menu-icons/documents-blue.svg');
+    width: 36px;
+    height: 40px;
+  }
+  &__item-icon.m-equipment {
+    background-image: url('@assets/icons/menu-icons/equipment.svg');
+    width: 40px;
+    height: 36px;
+  }
+  &__item-icon.m-handbook {
+    background-image: url('@assets/icons/menu-icons/book.svg');
+    width: 38px;
+    height: 40px;
+  }
+  
+  &__item-name {
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 36px;
+    color: $black;
+    cursor: pointer;
+  }
+  
+  &__item-name.m-active,
+  &__item-name.m-active a {
+    color: $blue;
+  }
+  
+  &__arrow {
+    position: absolute;
+    right: 5px;
+  }
+  
+  &__logout {
+    width: 32px;
+    height: 30px;
+    background-image: url("@assets/icons/logout.svg");
+    margin-left: 40px;
+    position: absolute;
+    bottom: 60px;
+    cursor: pointer;
+  }
+}

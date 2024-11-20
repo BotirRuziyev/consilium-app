@@ -1,0 +1,33 @@
+.documents-table {
+  &__row {
+    cursor: pointer;
+  }
+
+  &__name {
+    width: 555px;
+  }
+
+  &__category {
+    width: 187px;
+  }
+
+  &__start-date {
+    width: 209px;
+  }
+
+  &__introduced {
+    width: 180px;
+  }
+
+  &__end-date {
+    width: 210px;
+  }
+
+  &__audience {
+    width: 200px;
+  }
+
+  &__important {
+    width: 56px;
+  }
+}

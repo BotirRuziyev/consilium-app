@@ -1,0 +1,46 @@
+.g-button {
+  font-family: "Montserrat", sans-serif;
+  border: 1px solid #005AE1;
+  border-radius: 12px;
+  background: #fff;
+  color: #005AE1;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 20px 10px 20px;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.g-button.m-blue {
+  background: #005AE1;
+  color: #fff;
+}
+
+.g-button.disabled {
+  opacity: .7;
+  pointer-events: none;
+}
+
+.g-button[disabled] {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.g-button.m-noborder {
+  border: none;
+  padding: 0;
+}
+
+.g-button-group {
+  position: absolute;
+  right: 40px;
+}
+
+.g-button-group .g-button {
+  margin-right: 20px;
+}
+
+.g-button-group .g-button:last-child {
+  margin-right: 0;
+}
