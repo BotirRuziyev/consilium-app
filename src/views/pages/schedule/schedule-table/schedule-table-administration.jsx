@@ -1,6 +1,16 @@
 import arrowdown from '@assets/icons/arrow-down.svg'
 import TableTdMenu from '@core/components/table-td-menu'
+import { useState } from 'react';
 const ScheduleTableAdministration = () => {
+  const [openIndexes, setOpenIndexes] = useState([1, 2, 3, 4]);
+
+  const toggleAccordion = (index) => {
+    if (openIndexes.includes(index)) {
+      setOpenIndexes(openIndexes.filter((i) => i !== index));
+    } else {
+      setOpenIndexes([...openIndexes, index]);
+    }
+  };
     return (
       <div className="schedule__table-wrapper">
         <table className="schedule-table schedule-table-administration">
@@ -47,11 +57,12 @@ const ScheduleTableAdministration = () => {
             </tr>
           </thead>
           <tbody>
+
             <tr>
             <td colSpan="2" className="schedule-table__checkbox-cell m-left-border">
                 <input type="checkbox" />
               </td>
-              <td colSpan={2} className='schedule-table__brigade-cell schedule-table-accordion-btn'>
+              <td colSpan={2} className='schedule-table__brigade-cell schedule-table-accordion-btn' onClick={() => toggleAccordion(1)}>
               <span >Диспетчерская</span> <img src={arrowdown} alt="" />
               </td>
               <td colSpan={2}></td>
@@ -92,6 +103,8 @@ const ScheduleTableAdministration = () => {
               <td></td>
               <td></td>
             </tr>
+            {openIndexes.includes(1) && (
+            <>
             <tr>
               <td colSpan="2" className="schedule-table__checkbox-cell m-left-border">
                 <input type="checkbox" />
@@ -177,11 +190,14 @@ const ScheduleTableAdministration = () => {
               <td>180</td>
               <td>0</td>
             </tr>
+            </>
+          )}
+
             <tr>
             <td colSpan="2" className="schedule-table__checkbox-cell m-left-border">
                 <input type="checkbox" />
               </td>
-              <td colSpan={2} className='schedule-table__brigade-cell schedule-table-accordion-btn'>
+              <td colSpan="4" className='schedule-table__brigade-cell schedule-table-accordion-btn' onClick={() => toggleAccordion(2)}>
               <span>Дежурная комната</span> <img src={arrowdown} alt="" />
               </td>
               <td colSpan={2}></td>
@@ -222,6 +238,8 @@ const ScheduleTableAdministration = () => {
               <td></td>
               <td></td>
             </tr>
+            {openIndexes.includes(2) && (
+              <>
             <tr>
               <td colSpan="2" className="schedule-table__checkbox-cell m-left-border">
                 <input type="checkbox" />
@@ -306,11 +324,14 @@ const ScheduleTableAdministration = () => {
               <td>180</td>
               <td>0</td>
             </tr>
+              </>
+          )}
+
             <tr>
             <td colSpan="2" className="schedule-table__checkbox-cell m-left-border">
                 <input type="checkbox" />
               </td>
-              <td colSpan={2} className='schedule-table__brigade-cell schedule-table-accordion-btn'>
+              <td colSpan={2} className='schedule-table__brigade-cell schedule-table-accordion-btn' onClick={() => toggleAccordion(3)}>
               <span>Предрейсовый осмотр</span> <img src={arrowdown} alt="" />
               </td>
               <td colSpan={2}></td>
@@ -351,6 +372,8 @@ const ScheduleTableAdministration = () => {
               <td></td>
               <td></td>
             </tr>
+            {openIndexes.includes(3) && (
+              <>
             <tr>
               <td colSpan="2" className="schedule-table__checkbox-cell m-left-border">
                 <input type="checkbox" />
@@ -435,11 +458,14 @@ const ScheduleTableAdministration = () => {
               <td>180</td>
               <td>0</td>
             </tr>
+              </>
+          )}
+
             <tr>
             <td colSpan="2" className="schedule-table__checkbox-cell m-left-border">
                 <input type="checkbox" />
               </td>
-              <td colSpan={2} className='schedule-table__brigade-cell schedule-table-accordion-btn'>
+              <td colSpan={2} className='schedule-table__brigade-cell schedule-table-accordion-btn' onClick={() => toggleAccordion(4)}>
               <span>Подсобное помещение</span> <img src={arrowdown} alt="" />
               </td>
               <td colSpan={2}></td>
@@ -480,6 +506,8 @@ const ScheduleTableAdministration = () => {
               <td></td>
               <td></td>
             </tr>
+            {openIndexes.includes(4) && (
+              <>
             <tr>
               <td colSpan="2" className="schedule-table__checkbox-cell m-left-border">
                 <input type="checkbox" />
@@ -564,6 +592,8 @@ const ScheduleTableAdministration = () => {
               <td>180</td>
               <td>0</td>
             </tr>
+              </>
+          )}
           </tbody>
         </table>
       </div>

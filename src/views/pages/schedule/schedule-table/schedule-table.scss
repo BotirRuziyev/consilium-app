@@ -1,30 +1,37 @@
 .schedule__table-wrapper {
   overflow: auto;
-  width: 1730px;
+  max-width: 1760px;
+  width: 100%;
   height: 550px;
-  border-radius: 20px;
   padding-right: 4px;
-  padding-bottom: 4px;
 }
 
 .schedule-table {
   min-width: 100%;
   border-spacing: 0;
   table-layout: fixed;
+}
+.schedule-table-archive {
   min-height: 100%;
 }
-
 .schedule-table thead {
   position: sticky;
   top: 0;
   z-index: 10;
+}
+.schedule-table thead::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: $white;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.schedule-table thead td,
+.schedule-table thead th {
   background-color: $white;
 }
-.schedule-table thead th,
-.schedule-table thead td {
-  background: white;
-}
-
 .schedule-table th {
   text-align: left;
   font-size: 16px;
@@ -34,15 +41,17 @@
 .schedule-table th.m-center,
 .schedule-table td.m-center {
   text-align: center;
+  background-color: $white;
 }
 
 .schedule-table th,
 .schedule-table td {
   max-width: 260px;
-  min-width: 37px;
-  padding: 8px 6px;
+  min-width: 35px;
+  position: relative;
+  z-index: 2;
+  padding: 7px 5px;
   border-top: 1px solid #d1d1d1;
-  background-color: $white;
   text-overflow: ellipsis;
 }
 .schedule-table td:nth-child(2),
@@ -58,17 +67,7 @@
   border-top: none;
   border-bottom: 1px solid #d1d1d1;
 }
-.schedule-table thead td:nth-child(9),
-.schedule-table thead td:nth-child(10),
-.schedule-table thead td:nth-child(16),
-.schedule-table thead td:nth-child(17),
-.schedule-table thead td:nth-child(23),
-.schedule-table thead td:nth-child(24),
-.schedule-table thead td:nth-child(30),
-.schedule-table thead td:nth-child(31) {
-  background: #f2f2f2;
-}
-.schedule-table tbody td.m-selected {
+.schedule-table td.m-selected {
   background: #f2f2f2 !important;
 }
 .schedule-table tbody tr.m-active td,
@@ -118,7 +117,7 @@
 .schedule-table th {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 150%;
   letter-spacing: 0.01em;
   color: #1a1d2d;
@@ -126,12 +125,11 @@
 .schedule-table td {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 150%;
   color: #1a1d2d;
   white-space: nowrap;
 }
-
 .schedule-table tr:last-child td:first-child {
   border-radius: 0 0 0 20px;
   border-left: 1px solid #d1d1d1;
@@ -145,8 +143,6 @@
   border-radius: 0 20px 0 0;
 }
 .schedule-table thead th:last-child {
-  display: flex;
-  align-items: center;
   gap: 12px;
   border-right: 1px solid #d1d1d1;
 }
@@ -193,8 +189,10 @@
   display: flex;
   align-items: center;
   gap: 23px;
+  // padding-right: 0;
   cursor: pointer;
   user-select: none;
+  z-index: 3;
 }
 .schedule-table .schedule-table-accordion-btn span {
   position: relative;
@@ -237,29 +235,29 @@
 .schedule-table__brigade,
 .schedule-table__profile,
 .schedule-table__plate {
-  position: sticky !important;
-  overflow: hidden;
-  z-index: 100;
+  // position: sticky !important;
+  // overflow: hidden;
+  // z-index: 100;
 }
 
 .schedule-table__checkbox {
-  min-width: 45px !important;
+  min-width: 40px !important;
   left: 0;
 }
 
 .schedule-table__brigade {
   min-width: 110px;
-  left: 45px;
+  // left: 45px;
 }
 
 .schedule-table__profile {
   min-width: 110px;
-  left: 221px;
+  // left: 221px;
 }
 
 .schedule-table__plate {
   min-width: 135px;
-  left: 265px;
+  // left: 265px;
 }
 
 .schedule-table__time {
@@ -280,8 +278,8 @@
 .schedule-table__brigade-cell,
 .schedule-table__profile-cell,
 .schedule-table__plate-cell {
-  position: sticky !important;
-  z-index: 3;
+  // position: sticky !important;
+  // z-index: 3;
 }
 
 .schedule-table td.m-last {
@@ -313,7 +311,7 @@
 }
 .schedule-table__checkbox-cell {
   padding: 0 !important;
-  min-width: 45px !important;
+  min-width: 40px !important;
   left: 0;
 }
 .schedule-table__checkbox-cell input {
@@ -324,13 +322,13 @@
   margin: auto;
 }
 .schedule-table__brigade-cell {
-  left: 45px;
+  // left: 45px;
 }
 .schedule-table__profile-cell {
-  left: 221px;
+  // left: 221px;
 }
 .schedule-table__plate-cell {
-  left: 265px;
+  // left: 265px;
 }
 
 .schedule-table.m-drivers thead tr:last-child th {
@@ -353,17 +351,18 @@
   width: 565px;
 }
 .schedule-table-administration tbody td {
-  max-width: 158px;
+  max-width: 145px;
 }
 .schedule-table-administration tbody td:nth-child(2) {
   overflow: visible;
 }
 .schedule-table-administration tbody td.schedule-table__profile-cell {
   max-width: 100px;
+  margin-right: -20px;
 }
 .schedule-table-drivers tbody td {
-  max-width: 231px;
-  min-width: 54px;
+  max-width: 200px;
+  // min-width: 35px;
 }
 .schedule-table-archive tbody td {
   border-bottom: 1px solid #d1d1d1;

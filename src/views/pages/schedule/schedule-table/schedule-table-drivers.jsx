@@ -1,6 +1,16 @@
 import arrowdown from '@assets/icons/arrow-down.svg'
 import TableTdMenu from '@core/components/table-td-menu'
+import { useState } from 'react';
 const ScheduleTableDrivers = () => {
+  const [openIndexes, setOpenIndexes] = useState([1, 2, 3, 4]);
+
+  const toggleAccordion = (index) => {
+    if (openIndexes.includes(index)) {
+      setOpenIndexes(openIndexes.filter((i) => i !== index));
+    } else {
+      setOpenIndexes([...openIndexes, index]);
+    }
+  };
     return (
       <div className="schedule__table-wrapper">
         <table className="schedule-table schedule-table-drivers">
@@ -48,7 +58,7 @@ const ScheduleTableDrivers = () => {
           <tbody>
             <tr>
               <td colSpan={2} className='schedule-table__checkbox-cell m-left-border'></td>
-              <td colSpan={2} className='schedule-table__brigade-cell schedule-table-accordion-btn'>
+              <td colSpan={2} className='schedule-table__brigade-cell schedule-table-accordion-btn' onClick={() => toggleAccordion(1)}>
               <span className='m-selected'>Индикаторы</span> <img src={arrowdown} alt="" />
               </td>
               <td colSpan={2}></td>
@@ -86,6 +96,8 @@ const ScheduleTableDrivers = () => {
               <td></td>
               <td ></td>
             </tr>
+            {openIndexes.includes(1) && (
+            <>
             <tr>
             <td colSpan={2} className='schedule-table__checkbox-cell'></td>
               <td  className='schedule-table__brigade-cell m-right-border'>
@@ -100,8 +112,8 @@ const ScheduleTableDrivers = () => {
               <td className="m-left-border m-position-relative m-selected"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
-              <td className="m-left-border red-error">-4</td>
-              <td className="m-left-border red-error">-1</td>
+              <td className="m-left-border red-error m-center">-4</td>
+              <td className="m-left-border red-error m-center">-1</td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative m-selected"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative m-selected"><span className='m-employees m-center'></span></td>
@@ -118,8 +130,8 @@ const ScheduleTableDrivers = () => {
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative m-selected"><span className='m-employees m-center'></span></td>
-              <td className="m-left-border red-error m-selected">-1</td>
-              <td className="m-left-border red-error">-2</td>
+              <td className="m-left-border red-error m-center m-selected">-1</td>
+              <td className="m-left-border red-error m-center">-2</td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border"></td>
@@ -127,11 +139,14 @@ const ScheduleTableDrivers = () => {
               <td ></td>
               <td ></td>
             </tr>
+            </>
+          )}
+
             <tr>
             <td colSpan="2" className="schedule-table__checkbox-cell m-left-border">
                 <input type="checkbox" />
               </td>
-              <td className='schedule-table__brigade-cell schedule-table-accordion-btn'>
+              <td className='schedule-table__brigade-cell schedule-table-accordion-btn' onClick={() => toggleAccordion(2)}>
               <span>Бригада 301</span> <img src={arrowdown} alt="" />
               </td>
               <td></td>
@@ -170,6 +185,8 @@ const ScheduleTableDrivers = () => {
               <td></td>
               <td></td>
             </tr>
+            {openIndexes.includes(2) && (
+            <>
             <tr>
               <td colSpan="2" className="schedule-table__checkbox-cell m-left-border">
                 <input type="checkbox" />
@@ -338,11 +355,14 @@ const ScheduleTableDrivers = () => {
               <td>180</td>
               <td>0</td>
             </tr>
+            </>
+          )}
+
             <tr>
             <td colSpan="2" className="schedule-table__checkbox-cell m-left-border">
                 <input type="checkbox" />
               </td>
-              <td className='schedule-table__brigade-cell schedule-table-accordion-btn'>
+              <td className='schedule-table__brigade-cell schedule-table-accordion-btn' onClick={() => toggleAccordion(3)}>
               <span>Бригада 302</span> <img src={arrowdown} alt="" />
               </td>
               <td></td>
@@ -381,6 +401,8 @@ const ScheduleTableDrivers = () => {
               <td></td>
               <td></td>
             </tr>
+            {openIndexes.includes(3) && (
+            <>
             <tr>
               <td colSpan="2" className="schedule-table__checkbox-cell m-left-border">
                 <input type="checkbox" />
@@ -549,11 +571,14 @@ const ScheduleTableDrivers = () => {
               <td>180</td>
               <td>0</td>
             </tr>
+            </>
+          )}
+
             <tr>
             <td colSpan="2" className="schedule-table__checkbox-cell m-left-border">
                 <input type="checkbox" />
               </td>
-              <td className='schedule-table__brigade-cell schedule-table-accordion-btn'>
+              <td className='schedule-table__brigade-cell schedule-table-accordion-btn' onClick={() => toggleAccordion(4)}>
               <span>Бригада 303</span> <img src={arrowdown} alt="" />
               </td>
               <td></td>
@@ -592,6 +617,8 @@ const ScheduleTableDrivers = () => {
               <td></td>
               <td></td>
             </tr>
+            {openIndexes.includes(4) && (
+            <>
             <tr>
               <td colSpan="2" className="schedule-table__checkbox-cell m-left-border">
                 <input type="checkbox" />
@@ -760,6 +787,8 @@ const ScheduleTableDrivers = () => {
               <td>180</td>
               <td>0</td>
             </tr>
+            </>
+          )}
           </tbody>
         </table>
       </div>
