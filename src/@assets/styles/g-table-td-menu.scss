@@ -1,0 +1,90 @@
+.css-zddlty-MuiButtonBase-root-MuiButton-root {
+    max-width: 42px;
+    white-space: wrap;
+    min-width: auto !important;
+    padding: 0 !important;
+    background-color: transparent !important;
+    color: #1a1d2d !important;
+    svg {
+        display: none;
+    }
+}
+.css-bwhwlk-MuiModal-root-MuiPopover-root-MuiMenu-root .MuiPaper-root {
+    min-width: 211px !important;
+    box-shadow:
+        -2px -1px 4px 0 rgba(26, 29, 45, 0.2),
+        2px 2px 4px 0 rgba(26, 29, 45, 0.2) !important;
+    background: $white !important;
+    padding: 20px !important;
+    border-radius: 12px !important;
+}
+.css-bwhwlk-MuiModal-root-MuiPopover-root-MuiMenu-root .MuiPaper-root .MuiMenu-list {
+    padding: 0 !important;
+}
+.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root + .MuiDivider-root {
+    display: none;
+}
+.css-bwhwlk-MuiModal-root-MuiPopover-root-MuiMenu-root .MuiPaper-root .m-menu-head {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 114%;
+    letter-spacing: 0.04em;
+    color: $darkgrey;
+    margin-bottom: 12px;
+}
+.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    border-radius: 4px !important;
+    padding: 2px 6px !important;
+    margin-bottom: 4px !important;
+    font-family: "Inter", sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 14px !important;
+    line-height: 120% !important;
+    text-align: center !important;
+    color: rgba(0, 0, 0, 0.8) !important;
+    border: 1px solid red;
+}
+.m-td-active > div {
+    position: relative;
+    z-index: 2;
+}
+.css-9tj150-MuiButton-endIcon {
+    margin: 0 !important;
+}
+.css-8je8zh-MuiTouchRipple-root {
+    display: none;
+}
+.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root.m-active {
+    background: #e7f0ff;
+}
+.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root.m-active .m-icon {
+    background-color: $white;
+    border: 1px solid #d1d1d1;
+}
+.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root:nth-child(2) .m-icon {
+    background-color: $white;
+    border: 1px solid #d1d1d1;
+}
+.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root:nth-child(9) {
+    margin-bottom: 0;
+}
+.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root .m-icon {
+    border-radius: 4px;
+    padding: 2px;
+    width: 26px;
+    height: 22px;
+    background: #89b8ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    color: #1a1d2d;
+}

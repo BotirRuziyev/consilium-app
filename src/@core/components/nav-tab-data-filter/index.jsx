@@ -2,7 +2,7 @@ import { useState } from 'react'
 import plus from '../../../@assets/icons/plus.svg'
 
 const NavDateTabs = ({ tabsData }) => {
-  const [active, setActive] = useState(1)
+  const [active, setActive] = useState(3)
   const [dataTabs, setDataTabs] = useState(tabsData)
 
   const NavLink = ({ id, tabTitle, isActive, onClick }) => {

@@ -11,6 +11,7 @@
   min-width: 100%;
   border-spacing: 0;
   table-layout: fixed;
+  min-height: 100%;
 }
 
 .schedule-table thead {
@@ -44,7 +45,8 @@
   background-color: $white;
   text-overflow: ellipsis;
 }
-.schedule-table td:nth-child(2) {
+.schedule-table td:nth-child(2),
+.schedule-table td:nth-child(3) {
   overflow: hidden;
 }
 
@@ -56,13 +58,62 @@
   border-top: none;
   border-bottom: 1px solid #d1d1d1;
 }
-
+.schedule-table thead td:nth-child(9),
+.schedule-table thead td:nth-child(10),
+.schedule-table thead td:nth-child(16),
+.schedule-table thead td:nth-child(17),
+.schedule-table thead td:nth-child(23),
+.schedule-table thead td:nth-child(24),
+.schedule-table thead td:nth-child(30),
+.schedule-table thead td:nth-child(31) {
+  background: #f2f2f2;
+}
+.schedule-table tbody td.m-selected {
+  background: #f2f2f2 !important;
+}
+.schedule-table tbody tr.m-active td,
+.schedule-table tbody tr.m-active th {
+  background: #e7f0ff !important;
+  position: relative;
+}
+.schedule-table tbody tr.m-active td.m-td-active::after {
+  content: "";
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+  background-color: $white;
+  border: 1px solid #d1d1d1;
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.schedule-table tbody tr.m-active .schedule-table__brigade-cell::after {
+  content: "";
+  width: calc(100% - 16px);
+  height: calc(100% - 10px);
+  border: 1px solid #d1d1d1;
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
 .schedule-table tbody tr:first-child td {
   border-top: none;
 }
 .schedule-table tr:nth-child(4n) td,
 .schedule-table tr:nth-child(4n-1) td {
   background-color: #fff;
+}
+.schedule-table thead th {
+  white-space: nowrap;
+}
+.schedule-table thead td {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #1a1d2d;
 }
 .schedule-table th {
   font-family: "Montserrat", sans-serif;
@@ -132,8 +183,8 @@
   text-align: center;
 }
 .schedule-table .m-deviations {
-  position: sticky;
-  right: 0;
+  position: sticky !important;
+  right: -6px;
 }
 .schedule-table tbody tr:nth-child(1) .schedule-table-accordion-btn {
   font-weight: 500;
@@ -161,7 +212,7 @@
   background-color: $green;
   border-radius: 20px;
 }
-.schedule-table tbody tr:nth-child(1) .schedule-table-accordion-btn span::after {
+.schedule-table tbody .schedule-table-accordion-btn span.m-selected::after {
   content: "";
   width: 6px;
   height: 6px;
@@ -186,7 +237,8 @@
 .schedule-table__brigade,
 .schedule-table__profile,
 .schedule-table__plate {
-  position: sticky;
+  position: sticky !important;
+  overflow: hidden;
   z-index: 100;
 }
 
@@ -228,8 +280,8 @@
 .schedule-table__brigade-cell,
 .schedule-table__profile-cell,
 .schedule-table__plate-cell {
-  position: sticky;
-  z-index: 2;
+  position: sticky !important;
+  z-index: 3;
 }
 
 .schedule-table td.m-last {
@@ -260,8 +312,16 @@
   left: auto;
 }
 .schedule-table__checkbox-cell {
+  padding: 0 !important;
   min-width: 45px !important;
   left: 0;
+}
+.schedule-table__checkbox-cell input {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
 }
 .schedule-table__brigade-cell {
   left: 45px;
@@ -291,4 +351,43 @@
 
 .schedule-table.m-drivers .schedule-table__comment {
   width: 565px;
+}
+.schedule-table-administration tbody td {
+  max-width: 158px;
+}
+.schedule-table-administration tbody td:nth-child(2) {
+  overflow: visible;
+}
+.schedule-table-administration tbody td.schedule-table__profile-cell {
+  max-width: 100px;
+}
+.schedule-table-drivers tbody td {
+  max-width: 231px;
+  min-width: 54px;
+}
+.schedule-table-archive tbody td {
+  border-bottom: 1px solid #d1d1d1;
+}
+.schedule-table-archive tbody tr td:first-child {
+  border-radius: 0 0 0 20px;
+}
+.schedule-table-archive tbody tr td:last-child {
+  border-radius: 0 0 20px 0;
+}
+.schedule-table-archive tbody {
+  height: 100%;
+  width: 100%;
+  border: 1px solid #d1d1d1;
+  border-radius: 0 0 20px 20px;
+}
+.schedule-table-archive .currently-empty {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 180%;
+  color: $darkgrey;
 }

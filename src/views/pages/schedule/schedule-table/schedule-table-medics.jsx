@@ -1,4 +1,5 @@
 import arrowdown from '@assets/icons/arrow-down.svg'
+import TableTdMenu from '@core/components/table-td-menu'
 const ScheduleTableMedics = () => {
     return (
       <div className="schedule__table-wrapper">
@@ -13,29 +14,29 @@ const ScheduleTableMedics = () => {
               <td className="m-left-border m-center">3</td>
               <td className="m-left-border m-center">4</td>
               <td className="m-left-border m-center">5</td>
-              <td className="m-left-border m-center">6</td>
-              <td className="m-left-border m-center">7</td>
+              <td className="m-left-border m-center m-selected">6</td>
+              <td className="m-left-border m-center m-selected">7</td>
               <td className="m-left-border m-center">8</td>
               <td className="m-left-border m-center">9</td>
               <td className="m-left-border m-center red-error">10</td>
               <td className="m-left-border m-center red-error">11</td>
               <td className="m-left-border m-center">12</td>
-              <td className="m-left-border m-center">13</td>
-              <td className="m-left-border m-center">14</td>
+              <td className="m-left-border m-center m-selected">13</td>
+              <td className="m-left-border m-center m-selected">14</td>
               <td className="m-left-border m-center">15</td>
               <td className="m-left-border m-center">16</td>
               <td className="m-left-border m-center">17</td>
               <td className="m-left-border m-center">18</td>
               <td className="m-left-border m-center">19</td>
-              <td className="m-left-border m-center">20</td>
-              <td className="m-left-border m-center">21</td>
+              <td className="m-left-border m-center m-selected">20</td>
+              <td className="m-left-border m-center m-selected">21</td>
               <td className="m-left-border m-center">22</td>
               <td className="m-left-border m-center">23</td>
               <td className="m-left-border m-center">24</td>
               <td className="m-left-border m-center">25</td>
               <td className="m-left-border m-center red-error">26</td>
-              <td className="m-left-border m-center red-error">27</td>
-              <td className="m-left-border m-center">28</td>
+              <td className="m-left-border m-center red-error m-selected">27</td>
+              <td className="m-left-border m-center m-selected">28</td>
               <td className="m-left-border m-center">29</td>
               <td className="m-left-border m-center">30</td>
               <td className="m-left-border m-center">31</td>
@@ -49,7 +50,7 @@ const ScheduleTableMedics = () => {
             <tr>
               <td colSpan={2} className='schedule-table__checkbox-cell m-left-border'></td>
               <td colSpan={2} className='schedule-table__brigade-cell schedule-table-accordion-btn'>
-              <span>Индикаторы</span> <img src={arrowdown} alt="" />
+              <span className='m-selected'>Индикаторы</span> <img src={arrowdown} alt="" />
               </td>
               <td colSpan={2}></td>
               <td></td>
@@ -99,29 +100,29 @@ const ScheduleTableMedics = () => {
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
-              <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
-              <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
+              <td className="m-left-border m-position-relative m-selected"><span className='m-employees m-center'></span></td>
+              <td className="m-left-border m-position-relative m-selected"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border red-error">-4</td>
               <td className="m-left-border red-error">-1</td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
+              <td className="m-left-border m-position-relative m-selected"><span className='m-employees m-center'></span></td>
+              <td className="m-left-border m-position-relative m-selected"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
+              <td className="m-left-border m-position-relative m-selected"><span className='m-employees m-center'></span></td>
+              <td className="m-left-border m-position-relative m-selected "><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
-              <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
-              <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
-              <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
-              <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
-              <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
-              <td className="m-left-border red-error">-1</td>
+              <td className="m-left-border m-position-relative m-selected"><span className='m-employees m-center'></span></td>
+              <td className="m-left-border red-error m-selected">-1</td>
               <td className="m-left-border red-error">-2</td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
@@ -140,29 +141,29 @@ const ScheduleTableMedics = () => {
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
-              <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
-              <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
+              <td className="m-left-border m-position-relative m-selected"><span className='m-employees m-center'></span></td>
+              <td className="m-left-border m-position-relative m-selected"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border red-error">-2</td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
+              <td className="m-left-border m-position-relative m-selected"><span className='m-employees m-center'></span></td>
+              <td className="m-left-border m-position-relative m-selected"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
+              <td className="m-left-border m-position-relative m-selected"><span className='m-employees m-center'></span></td>
+              <td className="m-left-border m-position-relative m-selected"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
-              <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
-              <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
-              <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
-              <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
-              <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
-              <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
+              <td className="m-left-border m-position-relative m-selected"><span className='m-employees m-center'></span></td>
+              <td className="m-left-border m-position-relative m-selected"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
@@ -181,29 +182,29 @@ const ScheduleTableMedics = () => {
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
+              <td className="m-left-border m-position-relative m-selected"><span className='m-employees m-center'></span></td>
+              <td className="m-left-border m-position-relative m-selected"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
+              <td className="m-left-border m-position-relative m-selected"><span className='m-employees m-center'></span></td>
+              <td className="m-left-border m-position-relative m-selected"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
-              <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
-              <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
-              <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
-              <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
-              <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
-              <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
+              <td className="m-left-border m-position-relative m-selected"><span className='m-employees m-center'></span></td>
+              <td className="m-left-border m-position-relative m-selected"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border red-error">-1</td>
-              <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
-              <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
+              <td className="m-left-border m-position-relative m-selected"><span className='m-employees m-center'></span></td>
+              <td className="m-left-border m-position-relative m-selected"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
@@ -222,29 +223,29 @@ const ScheduleTableMedics = () => {
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
-              <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
-              <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
+              <td className="m-left-border m-position-relative m-selected"><span className='m-employees m-center'></span></td>
+              <td className="m-left-border m-position-relative m-selected"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border red-error">-1</td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
+              <td className="m-left-border m-position-relative m-selected"><span className='m-employees m-center'></span></td>
+              <td className="m-left-border m-position-relative m-selected"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
+              <td className="m-left-border m-position-relative m-selected"><span className='m-employees m-center'></span></td>
+              <td className="m-left-border m-position-relative m-selected"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
-              <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
-              <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
-              <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
-              <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
-              <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
-              <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
+              <td className="m-left-border m-position-relative m-selected"><span className='m-employees m-center'></span></td>
+              <td className="m-left-border m-position-relative m-selected"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
@@ -263,29 +264,29 @@ const ScheduleTableMedics = () => {
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
-              <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
-              <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
+              <td className="m-left-border m-position-relative m-selected"><span className='m-employees m-center'></span></td>
+              <td className="m-left-border m-position-relative m-selected"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border red-error">-2</td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
+              <td className="m-left-border m-position-relative m-selected"><span className='m-employees m-center'></span></td>
+              <td className="m-left-border m-position-relative m-selected"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
+              <td className="m-left-border m-position-relative m-selected"><span className='m-employees m-center'></span></td>
+              <td className="m-left-border m-position-relative m-selected"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
-              <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
-              <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
-              <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
-              <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
-              <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
-              <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
+              <td className="m-left-border m-position-relative m-selected"><span className='m-employees m-center'></span></td>
+              <td className="m-left-border m-position-relative m-selected"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
               <td className="m-left-border m-position-relative"><span className='m-employees m-center'></span></td>
@@ -345,34 +346,36 @@ const ScheduleTableMedics = () => {
               </td>
               <td colSpan="2" className="schedule-table__brigade-cell">Яблочкин Я.П.</td>
               <td colSpan="2" className="schedule-table__profile-cell m-right-border">Врач</td>
-              <td className="m-center">7/7</td>
+              <td className="m-center">
+                <TableTdMenu btnval={'7/7'} />
+              </td>
               <td className="m-left-border m-center"></td>
               <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
+              <td className="m-left-border m-center"></td>
+              <td className="m-left-border m-center m-selected"></td>
+              <td className="m-left-border m-center m-td-active m-selected"><TableTdMenu btnval={'7/7'} /></td>
               <td className="m-left-border m-center"></td>
               <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center red-error">7/7</td>
+              <td className="m-left-border m-center red-error"><TableTdMenu btnval={'7/7'} /></td>
               <td className="m-left-border m-center red-error"></td>
               <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
+              <td className="m-left-border m-center m-td-active m-selected"><TableTdMenu btnval={'7/7'} /></td>
+              <td className="m-left-border m-center m-selected"></td>
+              <td className="m-left-border m-center"></td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
               <td className="m-left-border m-center"></td>
               <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center"></td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
+              <td className="m-left-border m-center m-selected"></td>
+              <td className="m-left-border m-center m-selected"></td>
               <td className="m-left-border m-center m-active m-first-active">0</td>
               <td className="m-left-border m-center m-active">0</td>
               <td className="m-left-border m-center m-active">0</td>
               <td className="m-left-border m-center m-active">0</td>
               <td className="m-left-border m-center m-active red-error">0</td>
-              <td className="m-left-border m-center m-active red-error">0</td>
-              <td className="m-left-border m-center m-active">0</td>
+              <td className="m-left-border m-center m-active red-error m-selected">0</td>
+              <td className="m-left-border m-center m-active m-selected">0</td>
               <td className="m-left-border m-center m-active">0</td>
               <td className="m-left-border m-center m-active">0</td>
               <td className="m-left-border m-center m-active m-last-active">0</td>
@@ -387,37 +390,37 @@ const ScheduleTableMedics = () => {
               </td>
               <td colSpan="2" className="schedule-table__brigade-cell">Яблочкин Я.П.</td>
               <td colSpan="2" className="schedule-table__profile-cell m-right-border">Врач</td>
-              <td className="m-center">7/7</td>
+              <td className="m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
               <td className="m-left-border m-center"></td>
               <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
+              <td className="m-left-border m-center"></td>
+              <td className="m-left-border m-center m-selected"></td>
+              <td className="m-left-border m-center m-td-active m-selected"><TableTdMenu btnval={'7/7'} /></td>
               <td className="m-left-border m-center"></td>
               <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center red-error">7/7</td>
+              <td className="m-left-border m-center red-error"><TableTdMenu btnval={'7/7'} /></td>
               <td className="m-left-border m-center red-error"></td>
               <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
+              <td className="m-left-border m-center m-td-active m-selected"><TableTdMenu btnval={'7/7'} /></td>
+              <td className="m-left-border m-center m-selected"></td>
+              <td className="m-left-border m-center"></td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
               <td className="m-left-border m-center"></td>
               <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center red-error">7/7</td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
+              <td className="m-left-border m-center m-selected"></td>
+              <td className="m-left-border m-center m-selected"></td>
+              <td className="m-left-border m-center red-error"><TableTdMenu btnval={'7/7'} /></td>
               <td className="m-left-border m-center red-error"></td>
               <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
+              <td className="m-left-border m-center"></td>
+              <td className="m-left-border m-center m-selected"></td>
+              <td className="m-left-border m-center m-td-active m-selected"><TableTdMenu btnval={'7/7'} /></td>
               <td className="m-left-border m-center"></td>
               <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
               <td className='m-left-border'>155</td>
               <td>180</td>
               <td>180</td>
@@ -430,80 +433,80 @@ const ScheduleTableMedics = () => {
               <td colSpan="2" className="schedule-table__brigade-cell">Иванов И.И.</td>
               <td colSpan="2" className="schedule-table__profile-cell m-right-border">Фельдшер</td>
               <td className="m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
               <td className="m-left-border m-center"></td>
               <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
+              <td className="m-left-border m-center m-selected"></td>
+              <td className="m-left-border m-center m-selected"></td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
               <td className="m-left-border m-center"></td>
               <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
+              <td className="m-left-border m-center red-error"><TableTdMenu btnval={'7/7'} /></td>
+              <td className="m-left-border m-center red-error"></td>
+              <td className="m-left-border m-center m-selected"></td>
+              <td className="m-left-border m-center m-td-active m-selected"><TableTdMenu btnval={'7/7'} /></td>
               <td className="m-left-border m-center"></td>
               <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center red-error">7/7</td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
+              <td className="m-left-border m-center"></td>
+              <td className="m-left-border m-center"></td>
+              <td className="m-left-border m-center m-td-active m-selected"><TableTdMenu btnval={'7/7'} /></td>
+              <td className="m-left-border m-center m-selected"></td>
+              <td className="m-left-border m-center"></td>
+              <td className="m-left-border m-center red-error"><TableTdMenu btnval={'7/7'} /></td>
               <td className="m-left-border m-center red-error"></td>
               <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
+              <td className="m-left-border m-center m-selected"></td>
+              <td className="m-left-border m-center m-selected"></td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
               <td className="m-left-border m-center"></td>
               <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center red-error">7/7</td>
-              <td className="m-left-border m-center red-error"></td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center"></td>
-              {/* <td className="m-left-border m-center">7/7</td> */}
+              {/* <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td> */}
               <td className='m-left-border'>155</td>
               <td>180</td>
               <td>180</td>
               <td>0</td>
             </tr>
-            <tr>
+            <tr className='m-active'>
               <td colSpan="2" className="schedule-table__checkbox-cell m-left-border">
                 <input type="checkbox" />
               </td>
               <td colSpan="2" className="schedule-table__brigade-cell">Николаев Н.Н.</td>
               <td colSpan="2" className="schedule-table__profile-cell m-right-border">Врач</td>
-              <td className="m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center red-error">7/7</td>
+              <td className="m-center m-td-active"></td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
+              <td className="m-left-border m-center m-td-active"></td>
+              <td className="m-left-border m-center m-td-active"></td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
+              <td className="m-left-border m-center m-td-active"></td>
+              <td className="m-left-border m-center m-td-active"></td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
+              <td className="m-left-border m-center m-td-active"></td>
+              <td className="m-left-border m-center m-td-active"></td>
+              <td className="m-left-border m-center red-error"><TableTdMenu btnval={'7/7'} /></td>
               <td className="m-left-border m-center red-error"></td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center red-error">7/7</td>
+              <td className="m-left-border m-center m-td-active"></td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
+              <td className="m-left-border m-center m-td-active"></td>
+              <td className="m-left-border m-center m-td-active"></td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
+              <td className="m-left-border m-center m-td-active"></td>
+              <td className="m-left-border m-center m-td-active"></td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
+              <td className="m-left-border m-center m-td-active"></td>
+              <td className="m-left-border m-center m-td-active"></td>
+              <td className="m-left-border m-center red-error"><TableTdMenu btnval={'7/7'} /></td>
               <td className="m-left-border m-center red-error"></td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center"></td>
-              {/* <td className="m-left-border m-center">7/7</td> */}
+              <td className="m-left-border m-center m-td-active"></td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
+              <td className="m-left-border m-center m-td-active"></td>
+              <td className="m-left-border m-center m-td-active"></td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
+              <td className="m-left-border m-center m-td-active"></td>
+              <td className="m-left-border m-center m-td-active"></td>
+              {/* <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td> */}
               <td className='m-left-border'>155</td>
               <td>180</td>
               <td>180</td>
@@ -560,34 +563,34 @@ const ScheduleTableMedics = () => {
               </td>
               <td colSpan="2" className="schedule-table__brigade-cell">Яблочкин Я.П.</td>
               <td colSpan="2" className="schedule-table__profile-cell m-right-border">Врач</td>
-              <td className="m-center">7/7</td>
+              <td className="m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
               <td className="m-left-border m-center"></td>
               <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
+              <td className="m-left-border m-center"></td>
+              <td className="m-left-border m-center m-selected"></td>
+              <td className="m-left-border m-center m-td-active m-selected"><TableTdMenu btnval={'7/7'} /></td>
               <td className="m-left-border m-center"></td>
               <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center red-error">7/7</td>
+              <td className="m-left-border m-center red-error"><TableTdMenu btnval={'7/7'} /></td>
               <td className="m-left-border m-center red-error"></td>
               <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
+              <td className="m-left-border m-center m-td-active m-selected"><TableTdMenu btnval={'7/7'} /></td>
+              <td className="m-left-border m-center m-selected"></td>
+              <td className="m-left-border m-center"></td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
               <td className="m-left-border m-center"></td>
               <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center"></td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
+              <td className="m-left-border m-center m-selected"></td>
+              <td className="m-left-border m-center m-selected"></td>
               <td className="m-left-border m-center m-active m-first-active">0</td>
               <td className="m-left-border m-center m-active">0</td>
               <td className="m-left-border m-center m-active">0</td>
               <td className="m-left-border m-center m-active">0</td>
               <td className="m-left-border m-center m-active red-error">0</td>
-              <td className="m-left-border m-center m-active red-error">0</td>
-              <td className="m-left-border m-center m-active">0</td>
+              <td className="m-left-border m-center m-active red-error m-selected">0</td>
+              <td className="m-left-border m-center m-active m-selected">0</td>
               <td className="m-left-border m-center m-active">0</td>
               <td className="m-left-border m-center m-active">0</td>
               <td className="m-left-border m-center m-active m-last-active">0</td>
@@ -602,37 +605,37 @@ const ScheduleTableMedics = () => {
               </td>
               <td colSpan="2" className="schedule-table__brigade-cell">Яблочкин Я.П.</td>
               <td colSpan="2" className="schedule-table__profile-cell m-right-border">Врач</td>
-              <td className="m-center">7/7</td>
+              <td className="m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
               <td className="m-left-border m-center"></td>
               <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
+              <td className="m-left-border m-center"></td>
+              <td className="m-left-border m-center m-selected"></td>
+              <td className="m-left-border m-center m-td-active m-selected"><TableTdMenu btnval={'7/7'} /></td>
               <td className="m-left-border m-center"></td>
               <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center red-error">7/7</td>
+              <td className="m-left-border m-center red-error"><TableTdMenu btnval={'7/7'} /></td>
               <td className="m-left-border m-center red-error"></td>
               <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
+              <td className="m-left-border m-center m-td-active m-selected"><TableTdMenu btnval={'7/7'} /></td>
+              <td className="m-left-border m-center m-selected"></td>
+              <td className="m-left-border m-center"></td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
               <td className="m-left-border m-center"></td>
               <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center red-error">7/7</td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
+              <td className="m-left-border m-center m-selected"></td>
+              <td className="m-left-border m-center m-selected"></td>
+              <td className="m-left-border m-center red-error"><TableTdMenu btnval={'7/7'} /></td>
               <td className="m-left-border m-center red-error"></td>
               <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
+              <td className="m-left-border m-center"></td>
+              <td className="m-left-border m-center m-selected"></td>
+              <td className="m-left-border m-center m-td-active m-selected"><TableTdMenu btnval={'7/7'} /></td>
               <td className="m-left-border m-center"></td>
               <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
               <td className='m-left-border'>155</td>
               <td>180</td>
               <td>180</td>
@@ -645,34 +648,34 @@ const ScheduleTableMedics = () => {
               <td colSpan="2" className="schedule-table__brigade-cell">Грушина Г.П.</td>
               <td colSpan="2" className="schedule-table__profile-cell m-right-border">Фельдшер</td>
               <td className="m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
               <td className="m-left-border m-center"></td>
               <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
+              <td className="m-left-border m-center m-selected"></td>
+              <td className="m-left-border m-center m-selected"></td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
               <td className="m-left-border m-center"></td>
               <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
+              <td className="m-left-border m-center red-error"><TableTdMenu btnval={'7/7'} /></td>
+              <td className="m-left-border m-center red-error"></td>
+              <td className="m-left-border m-center m-selected"></td>
+              <td className="m-left-border m-center m-td-active m-selected"><TableTdMenu btnval={'7/7'} /></td>
               <td className="m-left-border m-center"></td>
               <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center red-error">7/7</td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
+              <td className="m-left-border m-center"></td>
+              <td className="m-left-border m-center"></td>
+              <td className="m-left-border m-center m-td-active m-selected"><TableTdMenu btnval={'7/7'} /></td>
+              <td className="m-left-border m-center m-selected"></td>
+              <td className="m-left-border m-center"></td>
+              <td className="m-left-border m-center red-error"><TableTdMenu btnval={'7/7'} /></td>
               <td className="m-left-border m-center red-error"></td>
               <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center red-error">7/7</td>
-              <td className="m-left-border m-center red-error"></td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
+              <td className="m-left-border m-center m-selected"></td>
+              <td className="m-left-border m-center m-selected"></td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
               <td className="m-left-border m-center"></td>
               <td className="m-left-border m-center"></td>
               <td className='m-left-border'>155</td>
@@ -687,34 +690,34 @@ const ScheduleTableMedics = () => {
               <td colSpan="2" className="schedule-table__brigade-cell">Персиков П.П.</td>
               <td colSpan="2" className="schedule-table__profile-cell m-right-border">Врач</td>
               <td className="m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
               <td className="m-left-border m-center"></td>
               <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
+              <td className="m-left-border m-center m-selected"></td>
+              <td className="m-left-border m-center m-selected"></td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
               <td className="m-left-border m-center"></td>
               <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
+              <td className="m-left-border m-center red-error"><TableTdMenu btnval={'7/7'} /></td>
+              <td className="m-left-border m-center red-error"></td>
+              <td className="m-left-border m-center m-selected"></td>
+              <td className="m-left-border m-center m-td-active m-selected"><TableTdMenu btnval={'7/7'} /></td>
               <td className="m-left-border m-center"></td>
               <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center red-error">7/7</td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
+              <td className="m-left-border m-center"></td>
+              <td className="m-left-border m-center"></td>
+              <td className="m-left-border m-center m-td-active m-selected"><TableTdMenu btnval={'7/7'} /></td>
+              <td className="m-left-border m-center m-selected"></td>
+              <td className="m-left-border m-center"></td>
+              <td className="m-left-border m-center red-error"><TableTdMenu btnval={'7/7'} /></td>
               <td className="m-left-border m-center red-error"></td>
               <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center red-error">7/7</td>
-              <td className="m-left-border m-center red-error"></td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
+              <td className="m-left-border m-center m-selected"></td>
+              <td className="m-left-border m-center m-selected"></td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
               <td className="m-left-border m-center"></td>
               <td className="m-left-border m-center"></td>
               <td className='m-left-border'>155</td>
@@ -730,34 +733,34 @@ const ScheduleTableMedics = () => {
               <td colSpan="2" className="schedule-table__profile-cell m-right-border">Врач</td>
               <td className="m-center"></td>
               <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
               <td className="m-left-border m-center"></td>
               <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
-              <td className="m-left-border m-center"></td>
+              <td className="m-left-border m-center m-td-active m-selected"><TableTdMenu btnval={'7/7'} /></td>
+              <td className="m-left-border m-center m-selected"></td>
               <td className="m-left-border m-center m-active m-first-active">k</td>
               <td className="m-left-border m-center m-active">k</td>
               <td className="m-left-border m-center m-active">k</td>
               <td className="m-left-border m-center m-active">k</td>
               <td className="m-left-border m-center m-active m-last-active">k</td>
+              <td className="m-left-border m-center red-error m-selected"></td>
+              <td className="m-left-border m-center m-selected"></td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
+              <td className="m-left-border m-center"></td>
+              <td className="m-left-border m-center"></td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
+              <td className="m-left-border m-center"></td>
+              <td className="m-left-border m-center m-selected"></td>
+              <td className="m-left-border m-center m-td-active m-selected"><TableTdMenu btnval={'7/7'} /></td>
+              <td className="m-left-border m-center"></td>
+              <td className="m-left-border m-center"></td>
+              <td className="m-left-border m-center red-error"><TableTdMenu btnval={'7/7'} /></td>
               <td className="m-left-border m-center red-error"></td>
               <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
+              <td className="m-left-border m-center m-td-active m-selected"><TableTdMenu btnval={'7/7'} /></td>
+              <td className="m-left-border m-center m-selected"></td>
               <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center red-error">7/7</td>
-              <td className="m-left-border m-center red-error"></td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
               <td className="m-left-border m-center"></td>
               <td className='m-left-border'>155</td>
               <td>180</td>
@@ -772,34 +775,34 @@ const ScheduleTableMedics = () => {
               <td colSpan="2" className="schedule-table__profile-cell m-right-border">Врач</td>
               <td className="m-center"></td>
               <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
               <td className="m-left-border m-center"></td>
               <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
-              <td className="m-left-border m-center"></td>
+              <td className="m-left-border m-center m-td-active m-selected"><TableTdMenu btnval={'7/7'} /></td>
+              <td className="m-left-border m-center m-selected"></td>
               <td className="m-left-border m-center m-active m-first-active">k</td>
               <td className="m-left-border m-center m-active">k</td>
               <td className="m-left-border m-center m-active">k</td>
               <td className="m-left-border m-center m-active">k</td>
               <td className="m-left-border m-center m-active m-last-active">k</td>
+              <td className="m-left-border m-center red-error m-selected"></td>
+              <td className="m-left-border m-center m-selected"></td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
+              <td className="m-left-border m-center"></td>
+              <td className="m-left-border m-center"></td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
+              <td className="m-left-border m-center"></td>
+              <td className="m-left-border m-center m-selected"></td>
+              <td className="m-left-border m-center m-td-active m-selected"><TableTdMenu btnval={'7/7'} /></td>
+              <td className="m-left-border m-center"></td>
+              <td className="m-left-border m-center"></td>
+              <td className="m-left-border m-center red-error"><TableTdMenu btnval={'7/7'} /></td>
               <td className="m-left-border m-center red-error"></td>
               <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
+              <td className="m-left-border m-center m-td-active m-selected"><TableTdMenu btnval={'7/7'} /></td>
+              <td className="m-left-border m-center m-selected"></td>
               <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center red-error">7/7</td>
-              <td className="m-left-border m-center red-error"></td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
               <td className="m-left-border m-center"></td>
               <td className='m-left-border'>155</td>
               <td>180</td>
@@ -857,37 +860,37 @@ const ScheduleTableMedics = () => {
               </td>
               <td colSpan="2" className="schedule-table__brigade-cell">Яблочкин Я.П.</td>
               <td colSpan="2" className="schedule-table__profile-cell m-right-border">Врач</td>
-              <td className="m-center">7/7</td>
+              <td className="m-center m-td-active"><TableTdMenu value={{val: '21/9'}} /></td>
               <td className="m-left-border m-center"></td>
               <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
+              <td className="m-left-border m-center"></td>
+              <td className="m-left-border m-center m-selected"></td>
+              <td className="m-left-border m-center m-td-active m-selected"><TableTdMenu btnval={'7/7'} /></td>
               <td className="m-left-border m-center"></td>
               <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center red-error">7/7</td>
+              <td className="m-left-border m-center red-error"><TableTdMenu btnval={'7/7'} /></td>
               <td className="m-left-border m-center red-error"></td>
               <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
+              <td className="m-left-border m-center m-td-active m-selected"><TableTdMenu btnval={'7/7'} /></td>
+              <td className="m-left-border m-center m-selected"></td>
+              <td className="m-left-border m-center"></td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
               <td className="m-left-border m-center"></td>
               <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center red-error">7/7</td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
+              <td className="m-left-border m-center m-selected"></td>
+              <td className="m-left-border m-center m-selected"></td>
+              <td className="m-left-border m-center red-error"><TableTdMenu btnval={'7/7'} /></td>
               <td className="m-left-border m-center red-error"></td>
               <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
+              <td className="m-left-border m-center"></td>
+              <td className="m-left-border m-center m-selected"></td>
+              <td className="m-left-border m-center m-td-active m-selected"><TableTdMenu btnval={'7/7'} /></td>
               <td className="m-left-border m-center"></td>
               <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
               <td className='m-left-border'>155</td>
               <td>180</td>
               <td>180</td>
@@ -899,37 +902,37 @@ const ScheduleTableMedics = () => {
               </td>
               <td colSpan="2" className="schedule-table__brigade-cell">Яблочкин Я.П.</td>
               <td colSpan="2" className="schedule-table__profile-cell m-right-border">Врач</td>
-              <td className="m-center">7/7</td>
+              <td className="m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
               <td className="m-left-border m-center"></td>
               <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
+              <td className="m-left-border m-center"></td>
+              <td className="m-left-border m-center m-selected"></td>
+              <td className="m-left-border m-center m-td-active m-selected"><TableTdMenu btnval={'7/7'} /></td>
               <td className="m-left-border m-center"></td>
               <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center red-error">7/7</td>
+              <td className="m-left-border m-center red-error"><TableTdMenu btnval={'7/7'} /></td>
               <td className="m-left-border m-center red-error"></td>
               <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
+              <td className="m-left-border m-center m-td-active m-selected"><TableTdMenu btnval={'7/7'} /></td>
+              <td className="m-left-border m-center m-selected"></td>
+              <td className="m-left-border m-center"></td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
               <td className="m-left-border m-center"></td>
               <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center red-error">7/7</td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
+              <td className="m-left-border m-center m-selected"></td>
+              <td className="m-left-border m-center m-selected"></td>
+              <td className="m-left-border m-center red-error"><TableTdMenu btnval={'7/7'} /></td>
               <td className="m-left-border m-center red-error"></td>
               <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
+              <td className="m-left-border m-center"></td>
+              <td className="m-left-border m-center m-selected"></td>
+              <td className="m-left-border m-center m-td-active m-selected"><TableTdMenu btnval={'7/7'} /></td>
               <td className="m-left-border m-center"></td>
               <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center"></td>
-              <td className="m-left-border m-center">7/7</td>
+              <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
               <td className='m-left-border'>155</td>
               <td>180</td>
               <td>180</td>
