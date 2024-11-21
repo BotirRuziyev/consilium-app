@@ -16,7 +16,7 @@ const tabs = [
   {
     id: 1,
     name: 'medics',
-    tabTitle: 'Медицинские  работники s'
+    tabTitle: 'Медицинские  работники'
   },
   {
     id: 2,
