@@ -1,4 +1,4 @@
-.css-zddlty-MuiButtonBase-root-MuiButton-root {
+.MuiButton-root {
     max-width: 30px;
     white-space: wrap;
     min-width: auto !important;
@@ -14,7 +14,7 @@
         display: none;
     }
 }
-.css-bwhwlk-MuiModal-root-MuiPopover-root-MuiMenu-root .MuiPaper-root {
+.MuiPaper-root {
     min-width: 211px !important;
     box-shadow:
         -2px -1px 4px 0 rgba(26, 29, 45, 0.2),
@@ -23,13 +23,13 @@
     padding: 20px !important;
     border-radius: 12px !important;
 }
-.css-bwhwlk-MuiModal-root-MuiPopover-root-MuiMenu-root .MuiPaper-root .MuiMenu-list {
+.MuiPaper-root .MuiMenu-list {
     padding: 0 !important;
 }
 .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root + .MuiDivider-root {
     display: none;
 }
-.css-bwhwlk-MuiModal-root-MuiPopover-root-MuiMenu-root .MuiPaper-root .m-menu-head {
+.MuiPaper-root .m-menu-head {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 14px;
@@ -38,7 +38,7 @@
     color: $darkgrey;
     margin-bottom: 12px;
 }
-.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root {
+.MuiMenuItem-root {
     display: flex;
     align-items: center;
     gap: 4px;
@@ -57,27 +57,27 @@
     position: relative;
     z-index: 2;
 }
-.css-9tj150-MuiButton-endIcon {
+.MuiButton-endIcon {
     margin: 0 !important;
 }
-.css-8je8zh-MuiTouchRipple-root {
+.-MuiTouchRipple-root {
     display: none;
 }
-.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root.m-active {
+.MuiMenuItem-root.m-active {
     background: #e7f0ff;
 }
-.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root.m-active .m-icon {
+.MuiMenuItem-root.m-active .m-icon {
     background-color: $white;
     border: 1px solid #d1d1d1;
 }
-.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root:nth-child(2) .m-icon {
+.MuiMenuItem-root:nth-child(2) .m-icon {
     background-color: $white;
     border: 1px solid #d1d1d1;
 }
-.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root:nth-child(9) {
+.MuiMenuItem-root:nth-child(9) {
     margin-bottom: 0;
 }
-.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root .m-icon {
+.MuiMenuItem-root .m-icon {
     border-radius: 4px;
     padding: 2px;
     width: 26px;
