@@ -5,7 +5,7 @@ const ScheduleTableMedics = () => {
   const [openIndexes, setOpenIndexes] = useState([1, 2, 3, 4]);
 
   const toggleAccordion = (index) => {
-    if (openIndexes.includes(index)) {
+    if (Array.isArray(openIndexes) && openIndexes.includes(index)) {
       setOpenIndexes(openIndexes.filter((i) => i !== index));
     } else {
       setOpenIndexes([...openIndexes, index]);
@@ -100,7 +100,7 @@ const ScheduleTableMedics = () => {
               <td></td>
               <td className='m-deviations'><span className='m-deviations__in'>4 отклонения</span></td>
             </tr>
-            {openIndexes.includes(1) && (
+            {Array.isArray(openIndexes) && openIndexes.includes(1) && (
             <>
             <tr>
             <td colSpan={2} className='schedule-table__checkbox-cell'></td>
@@ -354,7 +354,7 @@ const ScheduleTableMedics = () => {
               <td></td>
               <td></td>
             </tr>
-            {openIndexes.includes(2) && (
+            {Array.isArray(openIndexes) && openIndexes.includes(2) && (
             <>
             <tr>
               <td colSpan="2" className="schedule-table__checkbox-cell m-left-border">
@@ -576,7 +576,7 @@ const ScheduleTableMedics = () => {
               <td></td>
               <td></td>
             </tr>
-            {openIndexes.includes(3) && (
+            {Array.isArray(openIndexes) && openIndexes.includes(3) && (
               <>
             <tr>
               <td colSpan="2" className="schedule-table__checkbox-cell m-left-border">
@@ -877,7 +877,7 @@ const ScheduleTableMedics = () => {
               <td></td>
               <td></td>
             </tr>
-            {openIndexes.includes(4) && (
+            {Array.isArray(openIndexes) && openIndexes.includes(4) && (
               <>
             <tr>
               <td colSpan="2" className="schedule-table__checkbox-cell m-left-border">
