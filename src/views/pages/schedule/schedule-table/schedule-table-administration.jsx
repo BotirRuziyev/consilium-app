@@ -142,10 +142,10 @@ const ScheduleTableAdministration = () => {
               <td className="m-left-border m-center"></td>
               <td className="m-left-border m-center"></td>
               <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
-              <td className='m-left-border'>155</td>
-              <td>180</td>
-              <td>180</td>
-              <td>0</td>
+              <td className='m-left-border m-center'>155</td>
+              <td className='m-center'>180</td>
+              <td className='m-center'>180</td>
+              <td className='m-center'>0</td>
             </tr>
             <tr>
               <td colSpan="2" className="schedule-table__checkbox-cell m-left-border">
@@ -185,10 +185,10 @@ const ScheduleTableAdministration = () => {
               <td className="m-left-border m-center"></td>
               <td className="m-left-border m-center"></td>
               {/* <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'8/16'} /></td> */}
-              <td className='m-left-border'>155</td>
-              <td>180</td>
-              <td>180</td>
-              <td>0</td>
+              <td className='m-left-border m-center'>155</td>
+              <td className='m-center'>180</td>
+              <td className='m-center'>180</td>
+              <td className='m-center'>0</td>
             </tr>
             </>
           )}
@@ -277,10 +277,10 @@ const ScheduleTableAdministration = () => {
               <td className="m-left-border m-center"><TableTdMenu btnval={'8/8'} /></td>
               <td className="m-left-border m-center"></td>
               <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'8/8'} /></td>
-              <td className='m-left-border'>155</td>
-              <td>180</td>
-              <td>180</td>
-              <td>0</td>
+              <td className='m-left-border m-center'>155</td>
+              <td className='m-center'>180</td>
+              <td className='m-center'>180</td>
+              <td className='m-center'>0</td>
             </tr>
             <tr>
               <td colSpan="2" className="schedule-table__checkbox-cell m-left-border">
@@ -319,10 +319,10 @@ const ScheduleTableAdministration = () => {
               <td className="m-left-border m-center"></td>
               <td className="m-left-border m-center"><TableTdMenu btnval={'8/8'} /></td>
               <td className="m-left-border m-center "></td>
-              <td className='m-left-border'>155</td>
-              <td>180</td>
-              <td>180</td>
-              <td>0</td>
+              <td className='m-left-border m-center'>155</td>
+              <td className='m-center'>180</td>
+              <td className='m-center'>180</td>
+              <td className='m-center'>0</td>
             </tr>
               </>
           )}
@@ -411,10 +411,10 @@ const ScheduleTableAdministration = () => {
               <td className="m-left-border m-center"><TableTdMenu btnval={'8/16'} /></td>
               <td className="m-left-border m-center"><TableTdMenu btnval={'8/16'} /></td>
               <td className="m-left-border m-center"><TableTdMenu btnval={'8/16'} /></td>
-              <td className='m-left-border'>155</td>
-              <td>180</td>
-              <td>180</td>
-              <td>0</td>
+              <td className='m-left-border m-center'>155</td>
+              <td className='m-center'>180</td>
+              <td className='m-center'>180</td>
+              <td className='m-center'>0</td>
             </tr>
             <tr>
               <td colSpan="2" className="schedule-table__checkbox-cell m-left-border">
@@ -453,10 +453,10 @@ const ScheduleTableAdministration = () => {
               <td className="m-left-border m-center"><TableTdMenu btnval={'8/16'} /></td>
               <td className="m-left-border m-center"><TableTdMenu btnval={'8/16'} /></td>
               <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'8/16'} /></td>
-              <td className='m-left-border'>155</td>
-              <td>180</td>
-              <td>180</td>
-              <td>0</td>
+              <td className='m-left-border m-center'>155</td>
+              <td className='m-center'>180</td>
+              <td className='m-center'>180</td>
+              <td className='m-center'>0</td>
             </tr>
               </>
           )}
@@ -545,10 +545,10 @@ const ScheduleTableAdministration = () => {
               <td className="m-left-border m-center"><TableTdMenu btnval={'8/16'} /></td>
               <td className="m-left-border m-center"><TableTdMenu btnval={'8/16'} /></td>
               <td className="m-left-border m-center"><TableTdMenu btnval={'8/16'} /></td>
-              <td className='m-left-border'>155</td>
-              <td>180</td>
-              <td>180</td>
-              <td>0</td>
+              <td className='m-left-border m-center'>155</td>
+              <td className='m-center'>180</td>
+              <td className='m-center'>180</td>
+              <td className='m-center'>0</td>
             </tr>
             <tr>
               <td colSpan="2" className="schedule-table__checkbox-cell m-left-border">
@@ -587,10 +587,10 @@ const ScheduleTableAdministration = () => {
               <td className="m-left-border m-center"><TableTdMenu btnval={'8/16'} /></td>
               <td className="m-left-border m-center"><TableTdMenu btnval={'8/16'} /></td>
               <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'8/16'} /></td>
-              <td className='m-left-border'>155</td>
-              <td>180</td>
-              <td>180</td>
-              <td>0</td>
+              <td className='m-left-border m-center'>155</td>
+              <td className='m-center'>180</td>
+              <td className='m-center'>180</td>
+              <td className='m-center'>0</td>
             </tr>
               </>
           )}
