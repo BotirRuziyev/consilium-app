@@ -57,7 +57,7 @@ const ScheduleTableMedics = () => {
             </tr>
           </thead>
           <tbody>
-            {/* <tr>
+            <tr>
               <td colSpan={2} className='schedule-table__checkbox-cell m-left-border'></td>
               <td colSpan={2} className='schedule-table__brigade-cell schedule-table-accordion-btn' onClick={() => toggleAccordion(1)}>
               <span className='m-selected'>Индикаторы</span> <img src={arrowdown} alt="" />
@@ -479,6 +479,7 @@ const ScheduleTableMedics = () => {
               <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
               <td className="m-left-border m-center"></td>
               <td className="m-left-border m-center"></td>
+              {/* <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td> */}
               <td className='m-left-border m-center'>155</td>
               <td className='m-center'>180</td>
               <td className='m-center'>180</td>
@@ -521,6 +522,7 @@ const ScheduleTableMedics = () => {
               <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
               <td className="m-left-border m-center m-td-active"></td>
               <td className="m-left-border m-center m-td-active"></td>
+              {/* <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td> */}
               <td className='m-left-border m-center'>155</td>
               <td className='m-center'>180</td>
               <td className='m-center'>180</td>
@@ -962,52 +964,7 @@ const ScheduleTableMedics = () => {
               <td className='m-center'>0</td>
             </tr>
               </>
-            )} */}
-             <tr>
-            <td colSpan="2" className="schedule-table__checkbox-cell m-left-border">
-                <input type="checkbox" />
-              </td>
-              <td colSpan={2} className='schedule-table__brigade-cell schedule-table-accordion-btn' onClick={() => toggleAccordion(4)}>
-              <span>Бригада 1000</span> <img src={arrowdown} alt="" />
-              </td>
-              <td colSpan={2}></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
+            )}
           </tbody>
         </table>
       </div>
