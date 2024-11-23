@@ -965,13 +965,12 @@ const ScheduleTableMedics = () => {
             </tr>
               </>
             )}
-            <tr>
-            <tr>
+             <tr>
             <td colSpan="2" className="schedule-table__checkbox-cell m-left-border">
                 <input type="checkbox" />
               </td>
               <td colSpan={2} className='schedule-table__brigade-cell schedule-table-accordion-btn' onClick={() => toggleAccordion(4)}>
-              <span>Бригада 100000</span> <img src={arrowdown} alt="" />
+              <span>Бригада 1000</span> <img src={arrowdown} alt="" />
               </td>
               <td colSpan={2}></td>
               <td></td>
@@ -1010,7 +1009,6 @@ const ScheduleTableMedics = () => {
               <td></td>
               <td></td>
               <td></td>
-            </tr>
             </tr>
           </tbody>
         </table>
