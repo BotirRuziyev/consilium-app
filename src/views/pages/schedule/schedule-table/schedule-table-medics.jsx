@@ -57,7 +57,7 @@ const ScheduleTableMedics = () => {
             </tr>
           </thead>
           <tbody>
-            <tr>
+            {/* <tr>
               <td colSpan={2} className='schedule-table__checkbox-cell m-left-border'></td>
               <td colSpan={2} className='schedule-table__brigade-cell schedule-table-accordion-btn' onClick={() => toggleAccordion(1)}>
               <span className='m-selected'>Индикаторы</span> <img src={arrowdown} alt="" />
@@ -964,7 +964,7 @@ const ScheduleTableMedics = () => {
               <td className='m-center'>0</td>
             </tr>
               </>
-            )}
+            )} */}
              <tr>
             <td colSpan="2" className="schedule-table__checkbox-cell m-left-border">
                 <input type="checkbox" />
