@@ -479,7 +479,6 @@ const ScheduleTableMedics = () => {
               <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
               <td className="m-left-border m-center"></td>
               <td className="m-left-border m-center"></td>
-              {/* <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td> */}
               <td className='m-left-border m-center'>155</td>
               <td className='m-center'>180</td>
               <td className='m-center'>180</td>
@@ -522,7 +521,6 @@ const ScheduleTableMedics = () => {
               <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td>
               <td className="m-left-border m-center m-td-active"></td>
               <td className="m-left-border m-center m-td-active"></td>
-              {/* <td className="m-left-border m-center m-td-active"><TableTdMenu btnval={'7/7'} /></td> */}
               <td className='m-left-border m-center'>155</td>
               <td className='m-center'>180</td>
               <td className='m-center'>180</td>
