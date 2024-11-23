@@ -70,6 +70,12 @@
 .schedule-table td.m-selected {
   background: #f2f2f2 !important;
 }
+.schedule-table tbody {
+  position: relative;
+  z-index: 10000;
+  background-color: red;
+  border: 1px solid red;
+}
 .schedule-table tbody tr.m-active td,
 .schedule-table tbody tr.m-active th {
   background: #e7f0ff !important;
