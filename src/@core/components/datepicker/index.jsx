@@ -1,48 +1,17 @@
-// ** Modules Imports
-import { useMemo, useState } from 'react'
-import { Calendar } from 'react-date-range-dayjs'
-import dayjs from 'dayjs'
+import * as React from 'react';
+import dayjs from 'dayjs';
+import { DemoContainer } from '@mui/x-date-pickers/internals/demo';
+import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
+import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
+import { DatePicker } from '@mui/x-date-pickers/DatePicker';
+import './datepicker.scss'
 
-// ** Styles Imports
-import 'react-date-range/dist/styles.css'
-import 'react-date-range/dist/theme/default.css'
-
-const Datepicker = ({
-  value,
-  onChange,
-  onClose
-}) => {
-  const initialDate = useMemo(() => {
-    const formatedDate = dayjs(value)
-    const isValidDate = formatedDate.isValid()
-
-    return isValidDate ? formatedDate : null
-  }, [value])
-
-  const [date, setDate] = useState(initialDate)
-
-  const handleChangeDate = () => {
-    onChange(date)
-    onClose()
-  }
-
+export default function BasicDatePicker() {
   return (
-    <div className="react-datepicker-custom">
-      <Calendar
-        date={date}
-        onChange={setDate}
-        locale={dayjs.locale()}
-      />
-      <div className="react-datepicker__footer">
-        <button className="g-button m-noborder m-cancel" onClick={onClose}>
-          Отменить
-        </button>
-        <button className="g-button m-noborder" onClick={handleChangeDate}>
-          Применить
-        </button>
-      </div>
-    </div>
-  )
+    <LocalizationProvider dateAdapter={AdapterDayjs}>
+      <DemoContainer components={['DatePicker']}>
+        <DatePicker defaultValue={dayjs('2022-04-17')} />
+      </DemoContainer>
+    </LocalizationProvider>
+  );
 }
-
-export default Datepicker

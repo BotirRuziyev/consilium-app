@@ -21,7 +21,7 @@ import ProfilePage from './profile'
 import DocumentsPage from './documents'
 import DocumentViewPage from './document-view'
 import DetailPage from './detail'
-import SchedulePage from './schedule' 
+import SchedulePage from './schedule'
 
 const Guard = ({ children, guestGuard, authGuard }) => {
   if (guestGuard) return <GuestGuard fallback={<Spinner />}>{children}</GuestGuard>
@@ -42,7 +42,7 @@ const Page = ({ component }) => {
         <title>{title}</title>
         <meta name="description" content={description} />
       </Head>
-      <Guard 
+      <Guard
         guestGuard={component.guestGuard ?? false}
         authGuard={component.authGuard ?? false}
       >
@@ -96,7 +96,7 @@ const Pages = () => {
         {
           path: '/schedule',
           element: <Page component={SchedulePage} />
-        }
+        },
       ],
     }
   ])

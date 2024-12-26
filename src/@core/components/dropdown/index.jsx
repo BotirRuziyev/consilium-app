@@ -5,9 +5,9 @@ const Dropdown = ({
   renderButton,
   content,
 }) => {
-  const [active, setActive]  = useState(false)
-  const [position, setPosition]  = useState(false)
-  
+  const [active, setActive] = useState(false)
+  const [position, setPosition] = useState(false)
+
   const buttonRef = useRef(null)
   const dropdownRef = useRef(null)
 

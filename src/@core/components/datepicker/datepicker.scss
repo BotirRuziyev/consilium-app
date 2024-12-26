@@ -1,36 +1,57 @@
-@import '@assets/styles/colors.scss';
-
-.react-datepicker-custom {
-  margin-top: 8px;
-  background-color: $white;
-  box-shadow: 1px 1px 4px rgb(202, 202, 202);
-  border-radius: 2px;
-  padding-bottom: 10px;
-}
-
-.react-datepicker-custom .rdrSelected {
-  background-color: $blue;
-  color: $white;
-}
-
-.react-datepicker-custom .rdrDayStartPreview,
-.react-datepicker-custom .rdrDayEndPreview {
-  border-color: $blue;
-}
-
-.react-datepicker-custom .rdrDayNumber span::after {
-  background-color: $blue;
-}
-
-.react-datepicker-custom .rdrButton:hover {
-  background-color: $blue;
-}
-
-.react-datepicker-custom .react-datepicker__footer {
-  text-align: end;
-  padding: 10px 12px;
-}
-
-.react-datepicker-custom .react-datepicker__footer .g-button.m-cancel {
-  margin-right: 30px;
+.MuiStack-root {
+  padding-top: 0;
+  .MuiFormControl-root {
+    min-width: 189px !important;
+    max-width: 189px;
+    .MuiInputBase-root {
+      padding: 0;
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 125%;
+      color: #1a1d2d;
+      .MuiInputBase-input {
+        padding: 12px 38px 12px 20px;
+        height: auto;
+      }
+      .MuiInputAdornment-root {
+        display: block;
+        background: var(--light-grey);
+        border-radius: 8px;
+        min-width: 40px;
+        min-height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        max-height: auto !important;
+        margin-right: 3px;
+        position: relative;
+        &::after {
+          content: "";
+          height: 30px;
+          width: 0;
+          border-left: 1px solid #d1d1d1;
+          position: absolute;
+          top: 50%;
+          left: -3px;
+          transform: translateY(-50%);
+        }
+        .MuiButtonBase-root {
+          width: 100%;
+          height: 100%;
+          margin: 0;
+          padding: 0;
+          background: url("@assets/icons/date.svg") no-repeat center/20px;
+          svg {
+            display: none;
+          }
+        }
+      }
+      .MuiOutlinedInput-notchedOutline {
+        border: 1px solid #d1d1d1;
+        border-radius: 12px;
+      }
+    }
+  }
 }

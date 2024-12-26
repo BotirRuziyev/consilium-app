@@ -70,10 +70,20 @@
 .schedule-table td.m-selected {
   background: #f2f2f2 !important;
 }
+.schedule-table tbody tr.m-error td,
+.schedule-table tbody tr.m-error th {
+  background: #ff788080 !important;
+}
 .schedule-table tbody tr.m-active td,
 .schedule-table tbody tr.m-active th {
   background: #e7f0ff !important;
   position: relative;
+}
+.schedule-table tbody tr #demo-customized-menu {
+  display: none;
+}
+.schedule-table tbody tr.m-active #demo-customized-menu {
+  display: block;
 }
 .schedule-table tbody tr.m-active td.m-td-active::after {
   content: "";
@@ -87,7 +97,18 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.schedule-table tbody tr.m-active .schedule-table__brigade-cell::after {
+.schedule-table tbody tr.m-active .schedule-table__brigade-cell input:focus + .focus-after {
+  content: "";
+  width: calc(100% - 16px);
+  height: calc(100% - 10px);
+  border: 1px solid #d1d1d1;
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.schedule-table tbody tr.m-active .schedule-table__profile-cell input:focus + .focus-after {
   content: "";
   width: calc(100% - 16px);
   height: calc(100% - 10px);
@@ -162,7 +183,33 @@
 .schedule-table tr:last-child td {
   border-bottom: 1px solid #d1d1d1;
 }
-
+.schedule-table td {
+  input[type="text"],
+  input[type="number"] {
+    width: 100%;
+    background-color: transparent;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #1a1d2d;
+    text-align: center;
+    white-space: nowrap;
+    padding: 0;
+    border: 0;
+    position: relative;
+    z-index: 2;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+.schedule-table td.schedule-table__brigade-cell,
+td.schedule-table__profile-cell {
+  input {
+    text-align: left !important;
+  }
+}
 .schedule-table th.m-right-border,
 .schedule-table td.m-right-border {
   border-right: 1px solid #d1d1d1;
@@ -174,6 +221,9 @@
 }
 .schedule-table td.red-error {
   color: $red;
+}
+.schedule-table td.red-error .MuiButton-root {
+  color: $red !important;
 }
 .schedule-table__staff {
   text-align: center;

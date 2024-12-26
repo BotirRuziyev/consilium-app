@@ -49,18 +49,18 @@ const TableTdMenu = styled((props) => (
   },
 }));
 
-export default function CustomizedMenus({btnval}) {
+export default function CustomizedMenus({ btnval, checked }) {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
+    setAnchorEl(checked ? event.currentTarget : null);
   };
   const handleClose = () => {
     setAnchorEl(null);
   };
 
   return (
-    <div>
+    <div className='td-menu'>
       <Button
         id="demo-customized-button"
         aria-controls={open ? 'demo-customized-menu' : undefined}
@@ -83,49 +83,68 @@ export default function CustomizedMenus({btnval}) {
         onClose={handleClose}
       >
         <div className="m-menu-head">
-        Выберите тип ячейки
+          Выберите тип ячейки
         </div>
-        <MenuItem onClick={handleClose} disableRipple>
-          <div className="m-icon">
-
-          </div>
-          Пустая ячейка
-        </MenuItem>
         <Divider sx={{ my: 0.5 }} />
-        <MenuItem className='m-active' onClick={handleClose} disableRipple>
+        <MenuItem onClick={handleClose} disableRipple>
           <div className="m-icon">
-          Ч/Ч
+            Д
           </div>
-          Смена
+          День
         </MenuItem>
         <MenuItem onClick={handleClose} disableRipple>
           <div className="m-icon">
-          О
+            Н
+          </div>
+          Ночь
+        </MenuItem>
+        <MenuItem onClick={handleClose} disableRipple>
+          <div className="m-icon">
+            С
+          </div>
+          Сутки
+        </MenuItem>
+        <MenuItem onClick={handleClose} disableRipple>
+          <div className="m-icon">
+            O
           </div>
           Отпуск
         </MenuItem>
         <MenuItem onClick={handleClose} disableRipple>
           <div className="m-icon">
-          У
-          </div>
-          Учёба
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
-          <div className="m-icon">
-          Б
+            Б
           </div>
           Больничный
         </MenuItem>
         <MenuItem onClick={handleClose} disableRipple>
           <div className="m-icon">
-          К
+            У
+          </div>
+          Учеба
+        </MenuItem>
+        <MenuItem onClick={handleClose} disableRipple>
+          <div className="m-icon">
+            УВ
+          </div>
+          Уволен
+        </MenuItem>
+        <MenuItem onClick={handleClose} disableRipple>
+          <div className="m-icon">
+            К
           </div>
           Командировка
         </MenuItem>
         <MenuItem onClick={handleClose} disableRipple>
           <div className="m-icon">
+            Ч
           </div>
-          Отсутствие
+          Занято
+        </MenuItem>
+        <MenuItem onClick={handleClose} disableRipple>
+          <div className="m-icon">
+
+          </div>
+          Пустая ячейка
         </MenuItem>
       </TableTdMenu>
     </div>

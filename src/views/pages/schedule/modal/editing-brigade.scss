@@ -1,0 +1,215 @@
+.g-modal {
+    max-width: 100%;
+    max-height: 100vh;
+    min-height: 100vh;
+    width: 100%;
+    height: 100vh;
+    padding: 60px;
+    margin: 0;
+    border-radius: 0;
+    background: rgba(26, 29, 45, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: 0.3s;
+    .g-modal__close {
+        width: 40px;
+        height: 40px;
+        background-color: var(--light-grey);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 14px;
+        border-radius: 8px;
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        border: 0;
+        z-index: 2;
+        cursor: pointer;
+    }
+    .modal-in {
+        max-width: 1030px;
+        width: 100%;
+        position: relative;
+        padding: 70px 50px 30px;
+        margin: 0 auto;
+        border-radius: 50px;
+        box-shadow:
+            -4px -2px 6px 0 rgba(26, 29, 45, 0.2),
+            4px 4px 6px 0 rgba(26, 29, 45, 0.2);
+        background: var(--white-background);
+        z-index: 2;
+        .title {
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 120%;
+            text-align: center;
+            color: var(--blue);
+            margin-bottom: 23px;
+        }
+        .modal-content {
+            .label {
+                font-family: var(--font-family);
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 143%;
+                color: #1a1d2d;
+                margin-bottom: 8px;
+                .required {
+                    color: var(--red-error);
+                }
+            }
+            .date {
+                margin-bottom: 50px;
+            }
+            .madal-tab {
+                .tab-head {
+                    max-width: 570px;
+                    margin: 0 auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 40px;
+                    padding: 0 23px;
+                    border-bottom: 1px solid #d1d1d1;
+                    margin-bottom: 40px;
+
+                    .tab-btn {
+                        padding: 8px 18px;
+                        background-color: transparent;
+                        border: 0;
+                        border-bottom: 2px solid transparent;
+                        cursor: pointer;
+                        font-family: var(--font-family);
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 143%;
+                        color: var(--dark-grey-for-text);
+                        transition: 0.3s;
+                        &:hover {
+                            font-weight: 600;
+                        }
+                        &.active {
+                            border-color: var(--blue);
+                            font-weight: 600;
+                        }
+                    }
+                }
+                .tab-content {
+                    &__head {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        .form-control {
+                            .form-select {
+                                min-width: 230px;
+                                position: relative;
+                                .select-btn {
+                                    width: 100%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    gap: 12px;
+                                    background: var(--white-background);
+                                    border: 1px solid var(--grey-for-devider);
+                                    border-radius: 12px;
+                                    padding: 2px 3px 2px 20px;
+                                    font-family: var(--font-family);
+                                    font-weight: 500;
+                                    font-size: 16px;
+                                    line-height: 125%;
+                                    color: #1a1d2d;
+                                    &.none {
+                                        font-family: var(--font-family);
+                                        font-weight: 400;
+                                        font-size: 16px;
+                                        line-height: 150%;
+                                        color: var(--grey-for-help-text);
+                                    }
+                                    .select-icon {
+                                        margin-left: 3px;
+                                        width: 40px;
+                                        height: 40px;
+                                        background: var(--light-grey);
+                                        border-radius: 8px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        border: 0;
+                                        background-color: transparent;
+                                        position: relative;
+                                        cursor: pointer;
+
+                                        &::after {
+                                            content: "";
+                                            width: 0;
+                                            height: 30px;
+                                            border-left: 1px solid var(--grey-for-devider);
+                                            position: absolute;
+                                            top: 50%;
+                                            left: -3px;
+                                            transform: translateY(-50%);
+                                        }
+                                    }
+                                }
+                                .select-menu {
+                                    min-width: 100%;
+                                    border-radius: 12px;
+                                    padding: 20px 10px;
+                                    box-shadow:
+                                        -2px -1px 4px 0 rgba(26, 29, 45, 0.2),
+                                        2px 2px 4px 0 rgba(26, 29, 45, 0.2);
+                                    background: var(--white-background);
+                                    position: absolute;
+                                    top: calc(100% + 12px);
+                                    left: 0;
+                                    visibility: hidden;
+                                    opacity: 0;
+                                    transition: 0.3s;
+                                    &.show {
+                                        opacity: 1;
+                                        visibility: visible;
+                                        top: 100%;
+                                    }
+                                    &__in {
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 5px;
+                                        max-height: 220px;
+                                        overflow-y: auto;
+                                        &::-webkit-scrollbar {
+                                            width: 8px;
+                                        }
+                                        &::-webkit-scrollbar-thumb {
+                                            border-radius: 4px;
+                                            background: #d1d1d1;
+                                        }
+                                        .select-option {
+                                            font-family: var(--font-family);
+                                            font-weight: 500;
+                                            font-size: 16px;
+                                            line-height: 125%;
+                                            color: #1a1d2d;
+                                            border-radius: 8px;
+                                            padding: 10px 10px;
+                                            cursor: pointer;
+                                            transition: 0.3s;
+                                            &:hover {
+                                                background: #e7f0ff;
+                                            }
+                                            &.selected {
+                                                background: #e7f0ff;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

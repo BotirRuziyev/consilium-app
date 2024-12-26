@@ -8,7 +8,7 @@ ScheduleViewPage.meta = {
   title: 'Расписание | Consilium-online'
 }
 
-ScheduleViewPage.guestGuard = false
-ScheduleViewPage.authGuard = true
+// ScheduleViewPage.guestGuard = false
+// ScheduleViewPage.authGuard = true
 
 export default ScheduleViewPage

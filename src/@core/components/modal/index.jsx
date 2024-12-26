@@ -9,22 +9,24 @@ const Modal = ({ isOpen, onClose, children }) => {
   }, [isOpen])
 
   useEffect(() => {
-      const modalElement = modalRef.current
+    const modalElement = modalRef.current
 
-      if (modalElement) {
-        if (isModalOpen) {
-          modalElement.showModal()
-        }
-        else {
-          modalElement.close()
-        }
+    if (modalElement) {
+      if (isModalOpen) {
+        modalElement.showModal()
       }
+      else {
+        modalElement.close()
+      }
+    }
   }, [isModalOpen])
 
   return (
     <dialog ref={modalRef} className="g-modal">
-      <div className="g-modal__close" onClick={onClose}></div>
-      {children}
+      <div className="modal-in">
+        <div className="g-modal__close" onClick={onClose}></div>
+        {children}
+      </div>
     </dialog>
   )
 }
